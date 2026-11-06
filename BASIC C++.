@@ -341,6 +341,108 @@ if (myAge >= votingAge) {
 // Outputs: Old enough to vote!
 
 
+C++ has the following conditional statements:
+Use if to specify a block of code to be executed, if a condition is true
+Use else to specify a block of code to be executed, if the same condition is false
+Use else if to specify a new condition to test, if the first condition is false
+Use switch to specify many alternative blocks of code to be executed
+
+Use the if statement to specify a block of C++ code to be executed if a condition is true.
+Syntax
+if (condition) {
+  // block of code to be executed if the condition is true}
+
+Use the else statement to specify a block of code to be executed if the condition is false.
+Syntax
+if (condition) {
+  // block of code to be executed if the condition is true
+} else {
+  // block of code to be executed if the condition is false
+}
+
+Use the else if statement to specify a new condition to test if the first condition is false.
+You can use else if to check multiple conditions, one after another.
+Syntax
+if (condition1) {
+  // block of code to be executed if condition1 is true
+} else if (condition2) {
+  // block of code to be executed if condition1 is false and condition2 is true
+} else {
+  // block of code to be executed if both conditions are false
+}
+
+you can also place an if statement inside another if. This is called a nested if statement.
+A nested if lets you check for a condition only if another condition is already true.
+Syntax
+if (condition1) {
+  // code to run if condition1 is true
+  if (condition2) {
+    // code to run if both condition1 and condition2 are true
+  }
+}
+
+Example
+int x = 15;
+int y = 25;
+if (x > 10) {
+  cout << "x is greater than 10\n";
+  // Nested if
+  if (y > 20) {
+    cout << "y is also greater than 20\n";
+  }
+}
+RESULT:x is greater than 10
+y is also greater than 20
+
+Real Life Example:
+This example shows how you can use if..else to "open a door" if the user enters the correct code:
+Example
+int doorCode = 1337;
+if (doorCode == 1337) {
+  cout << "Correct code.\nThe door is now open.\n";
+} else {
+  cout << "Wrong code.\nThe door remains closed.\n";
+}
+
+Use the switch statement to select one of many code blocks to be executed.
+Syntax
+switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
+
+This is how it works:
+The switch expression is evaluated once
+The value of the expression is compared with the values of each case
+If there is a match, the associated block of code is executed
+The break and default keywords are optional, and will be described later in this chapter
+
+int day = 4
+switch (day){
+case 1:
+cout << "monday";
+break;
+case 2:
+cout << "tuesday";
+break;
+case 3:
+cout << "wednesday";
+break;
+case 4 :
+cout << "thursday";
+break;
+}
+//results thursday
+
+When C++ reaches a break keyword, it breaks out of the switch block.
+This will stop the execution of more code and case testing inside the block.
+
 
 
 
