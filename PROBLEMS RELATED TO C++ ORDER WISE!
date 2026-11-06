@@ -38,3 +38,36 @@ return 0;
 }
 RESULT: 200
 
+
+PROBLEM 4: create a calculator for addition.
+SOLUTION 4:
+int x, y;
+int sum;
+cout << "Type a number: ";
+cin >> x;
+cout << "Type another number: ";
+cin >> y;
+sum = x + y;
+cout << "Sum is: " << sum;
+
+
+PROBLEM 5:MAKE A REPORT CARD OF A STUDENT 
+SOLUTION 5: (th results are based on person to person)
+include <iostream>
+using namespace std;
+int main() {
+    // 1. Declare an int named studentID and assign it a value
+    int studentID = 101;
+    // 2. Declare a float (or double) named score and assign it a decimal value
+    float score = 95.5f;
+    // 3. Declare a char named grade and assign it a single character
+    char grade = 'A';
+    // 4. Print all three values using cout
+    cout << "Student ID: " << studentID << "\n";
+    cout << "Score: " << score << "\n";
+    cout << "Grade: " << grade << "\n";
+    return 0;
+}
+
+
+
