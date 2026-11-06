@@ -119,6 +119,20 @@ int main() {
 }
 
 
+PROBLEM 9:COUNT NO. FROM 1 TO 5 USING WHILE LOOP.
+SOLUTION 9:
+#include <iostream>
+using namespace std;
+int main(){
+int x=1;
+while (x<6){
+cout << x++;
+}
+return 0;
+}
+
+
+
 
 
 
