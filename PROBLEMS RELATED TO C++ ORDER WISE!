@@ -70,4 +70,16 @@ int main() {
 }
 
 
+PROBLEM 6: DECLARE TWO INT AS RATE OF ITEM AND TAX THEN PRINT TOTAL SUM PAYED BY THE CUSTOMER .(PUT THE RATE AS USER INPUT)
+SOLUTION 6:
+#include <iostream>
+using namespace std;
+int main() {
+    int rate;
+    int tax=10;
+    cin >> rate;
+    int total = rate + tax;
+    cout << total;
+    return 0;
+}
 
