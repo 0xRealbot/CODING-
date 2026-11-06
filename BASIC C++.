@@ -321,6 +321,28 @@ cout << "Your name is: " << firstName;
 // Your name is: John
 
 
+If you prefer to print true and false as words instead of 1 and 0, you can use the boolalpha manipulator:
+Example
+bool isCodingFun = true;
+bool isFishTasty = false;
+cout << boolalpha; // enable printing "true"/"false"
+cout << isCodingFun << "\n";   // Outputs true
+cout << isFishTasty << "\n";  // Outputs false
+
+Example
+Output "Old enough to vote!" if myAge is greater than or equal to 18. Otherwise output "Not old enough to vote.":
+int myAge = 25;
+int votingAge = 18;
+if (myAge >= votingAge) {
+  cout << "Old enough to vote!";
+} else {
+  cout << "Not old enough to vote.";
+}
+// Outputs: Old enough to vote!
+
+
+
+
 
 
 
