@@ -54,18 +54,6 @@ return 0;
 RESULT : Hello World!Have a good day!
 
 
-PROBLEM 1  :print Hello,C++
-
-SOLUTION 1 :
-#include <iostream>
-using namespace std;
-int main() {
-  cout << "Hello,C++";
-  return 0;
-}
-RESULT :Hello,C++
-
-
 You can add as many cout objects as you want. However, note that it does not insert a new line at the end of the output.
 You can also use cout() to print numbers.
 However, unlike text, we don't put numbers inside double quotes.
@@ -93,22 +81,6 @@ cout << "i am peter";
 RESULT :
 hello
 i am peter
-
-
-PROBLEM 2: print your name and age in two different lines
-
-SOLUTION 2:
-#include <iostream>
-using namespace std;
-
-int main() {
- cout << "Peter"<< "\n"; 
- cout << "55";
-  return 0;
-}
-RESULT: 
-Peter
-55
 
 
 Comments can be used to explain C++ code, and to make it more readable. It can also be used to prevent execution when testing alternative code. Comments can be singled-lined or multi-lined.
