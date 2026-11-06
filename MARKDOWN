@@ -1,0 +1,14 @@
+Markdown is a lightweight markup language that allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML).
+IT IS EASY TO LEARN AND USE! 
+THE FOLLWING ARE BASIC REFERENCES OF MARKDOWN
+# //IT IS USED FOR HEADING 1 ,BIG ONE
+## //IT IS USED FOR HEADING 2 ,SLIGHTKY SMALLER THAN THE HEADING 1
+*  * //IT IS USED TO WRITE WORD IN ITALIC
+** **//IT IS USED TO WRITE WORD IN BOLD
+[link](url) //IT IS USED TO ADD LINKS IN MD FILES
+![alt](image) //THIS IS USED TO ADD IMAGE IN FILES
+`code` // THIS IS USED TO ADD CODES IN THE FILE
+-item //THIS IS USED TO LIST UNORDERED ITEMS
+1. item //THIS IS USED TO LIST ORDERED ITEMS
+> qoute // THIS IS USED TO ADD QUOTES IN THE FILE
+--- //USED TO ADD HORIZONTAL RULE
