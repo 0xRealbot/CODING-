@@ -96,3 +96,29 @@ if (myAge >= votingAge) {
 }
 
 
+PROBLEM 8:MAKE A CHOICE BETWEEN COFFEE OR TEA WITH USING OF SWITCH.
+SOLUTION 8:
+#include <iostream>
+using namespace std;
+
+int main() {
+    int choice;
+    cin >> choice;
+    switch (choice) {
+        case 1:
+            cout << "You chose Coffee";
+            break;
+        case 2:
+            cout << "You chose Tea";
+            break;
+        default:
+            cout << "Invalid choice";
+            break;
+    }
+    return 0;
+}
+
+
+
+
+
