@@ -38,7 +38,7 @@ C++ is used to create computer programs, and is one of the most used languages i
 C++ was developed as an extension of C, and both languages have almost the same syntax.
 
 
-WHY USE C++
+##WHY USE C++
 C++ is one of the world's most popular programming languages.
 C++ can be found in today's operating systems, Graphical User Interfaces, and embedded systems.
 C++ is an object-oriented programming language which gives a clear structure to programs and allows code to be reused, lowering development costs.
@@ -47,7 +47,7 @@ C++ is fun and easy to learn!
 As C++ is close to C, C# and Java, it makes it easy for programmers to switch to C++ or vice versa.
 
 
-SYNTAX-
+***syntax**
 #include <iostream> // it is a header file library that lets u input and output objects
 using namespace std; //means that we can use names for objects and variables 
 int main(){ //this is called function and any code inside the curly bracket will be executed
@@ -55,7 +55,7 @@ cout << "hello"; // this is an object which lets u output things
 return 0; // ends the main function
 } //curly bracket to actually end the function
 
-EXAMPLE
+**EXAMPLE**
 #include <iostream>
 using namespace std;
 int main() {
@@ -65,9 +65,9 @@ int main() {
 RESULT : Hello World!
 
 
-STD :: // it can be used in place of using namespace std; like std::cout<<"hello world";
+##STD :: // it can be used in place of using namespace std; like std::cout<<"hello world";
 
-EXAMPLE-
+**EXAMPLE-**
 #include <iostream>
 int main() {
 std:: cout << "Hello World!";
@@ -81,7 +81,7 @@ In a programming language, these programming instructions are called statements.
 It is important to end the statement with semicolon
 Most c++ programs contains multiple statements and they are executed one by one!
 
-EXAMPLE
+**EXAMPLE**
 cout << "Hello World!";
 cout << "Have a good day!";
 return 0;
@@ -92,7 +92,7 @@ You can add as many cout objects as you want. However, note that it does not ins
 You can also use cout() to print numbers.
 However, unlike text, we don't put numbers inside double quotes.
 
-EXAMPLE:
+**EXAMPLE:**
 #include <iostream>
 using namespace std;
 int main() {
@@ -103,30 +103,29 @@ RESULT : 3
 
 You can also perform mathematical calculations
 
-EXAMPLE :
+**EXAMPLE :**
 cout << 3*4;
 RESULT: 12
 
-To insert a new line in your output, you can use the \n character
+##To insert a new line in your output, you can use the \n character
 
-EXAMPLE:
+**EXAMPLE:**
 cout << "hello"<<"\n";
 cout << "i am peter";
 RESULT :
 hello
 i am peter
 
-
 Comments can be used to explain C++ code, and to make it more readable. It can also be used to prevent execution when testing alternative code. Comments can be singled-lined or multi-lined.
 Single-line comments start with two forward slashes (//).
 Any text between // and the end of the line is ignored by the compiler (will not be executed).
 
-EXAMPLE:
+**EXAMPLE:**
 //this is a comment 
 cout << "hello";
 RESULT : hello (here comment is not read by compiler .)
 
-Multi-line comments start with /* and ends with */.
+##Multi-line comments start with /* and ends with */.
 Any text between /* and */ will be ignored by the compiler
 these are useful to write comments which are bigger than ususal.
 
@@ -134,7 +133,7 @@ these are useful to write comments which are bigger than ususal.
 Variables are containers for storing data values.
 In C++, there are different types of variables (defined with different keywords),
 
-for example:
+**for example:**
 int - stores integers (whole numbers), without decimals, such as 123 or -123
 double - stores floating point numbers, with decimals, such as 19.99 or -19.99
 char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes
@@ -144,86 +143,71 @@ bool - stores values with two states: true or false
 to declare a variable we use:
 variable variableName = value;
 
-EXAMPLE : int x=5; //it stores value of x as 5
+**EXAMPLE : int x=5; //it stores value of x as 5**
 
 we can also change value of the variable by writing:
 variable name=value;
 
-EXAMPLE :int x=5;   x=10; //this changes value of x from 5 to 10
+**EXAMPLE**:int x=5;   x=10; //this changes value of x from 5 to 10
 
 The cout object is used together with the << operator to display variables.
 To combine both text and a variable, separate them with the << operator:
 
-Example
+**Example**
 int myAge = 35;
-
 cout << "I am " << myAge << " years old."; // this results in : I am 35 years old.
 To declare more than one variable of the same type, use a comma-separated list:
 
-Example
+**Example**
 int x = 5, y = 6, z = 50;
 cout << x + y + z; 
 RESULT : 61
 
-You can also assign the same value to multiple variables in one line:
+##You can also assign the same value to multiple variables in one line:
 
-Example
+**Example**
 int x, y, z;
 x = y = z = 50;
 cout << x + y + z;
 RESULT : 150
 
-All C++ variables must be identified with unique names.
+##All C++ variables must be identified with unique names.
 These unique names are called identifiers.
 
-Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).
-The general rules for naming variables are:
-
+##Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).
+##The general rules for naming variables are:
 Names can contain letters, digits and underscores
 Names must begin with a letter or an underscore (_)
 Names are case-sensitive (myVar and myvar are different variables)
 Names cannot contain whitespaces or special characters like !, #, %, etc.
 Reserved words (like C++ keywords, such as int) cannot be used as names
 
-When you do not want others (or yourself) to change existing variable values, use the const keyword (this will declare the variable as "constant", which means unchangeable and read-only):
+##When you do not want others (or yourself) to change existing variable values, use the const keyword (this will declare the variable as "constant", which means unchangeable and read-only):
 
-EXAMPLE:
+**EXAMPLE:**
 const int minutesPerHour = 60;
 
 
-PROBLEM 3 : specify length and breadth of a rectangle and find its area.
-SOLUTION 3 : 
-#include <iostream>
-using namespace std;
-int main(){
-int length = 10;
-int breadth = 20;
-area = length*breadth;
-cout << area;
-return 0;
-}
-RESULT: 200
 
-
-You have already learned that cout is used to output (print) values. Now we will use cin to get user input.
+##You have already learned that cout is used to output (print) values. Now we will use cin to get user input.
 cin is a predefined variable that reads data from the keyboard with the extraction operator (>>).
 In the following example, the user can input a number, which is stored in the variable x. Then we print the value of x:
-Example
+**Example**
 int x; 
 cout << "Type a number: "; // Type a number and press enter
 cin >> x; // Get user input from the keyboard
 cout << "Your number is: " << x; // Display the input value
 
 
-The auto keyword automatically detects the type of a variable based on the value you assign to it.
+##The auto keyword automatically detects the type of a variable based on the value you assign to it.
 It helps you write cleaner code and avoid repeating types, especially for long or complex types.
 For example: Instead of writing int x = 5;, you can write:
-Example
+**Example**
 auto x = 5; // x is automatically treated as int
 
 
-Here's a real-life example of using different data types, to calculate and output the total cost of a number of items:
-Example
+##Here's a real-life example of using different data types, to calculate and output the total cost of a number of items:
+**Example**
 // Create variables of different data types
 int items = 50;
 double cost_per_item = 9.99;
@@ -235,17 +219,17 @@ cout << "Cost per item: " << cost_per_item << currency << "\n";
 cout << "Total cost = " << total_cost << currency << "\n";
 
 
-Operators are used to perform operations on variables and values.
+##Operators are used to perform operations on variables and values.
 
-C++ divides the operators into the following groups:
+##C++ divides the operators into the following groups:
 Arithmetic operators
 Assignment operators
 Comparison operators
 Logical operators
 Bitwise operators
 
-Arithmetic operators are used to perform common mathematical operations.
-Example
+##Arithmetic operators are used to perform common mathematical operations.
+**Example**
 +	Addition	Adds together two values	x + y	
 -	Subtraction	Subtracts one value from another	x - y	
 *	Multiplication	Multiplies two values	x * y	
@@ -254,7 +238,7 @@ Example
 ++	Increment	Increases the value of a variable by 1	++x	
 --	Decrement	Decreases the value of a variable by 1	--x
 
-EXAMPLE:
+**EXAMPLE:**
 int x = 10;
 int y = 3;
 cout << (x + y) << "\n"; // 13
@@ -268,7 +252,7 @@ cout << z << "\n"; // 6
 --z;
 cout << z << "\n"; // 5
 
-A list of all assignment operators:
+##A list of all assignment operators:
 
 =	,x = 5,	x = 5	
 +=,	x += 3,	x = x + 3	
@@ -282,13 +266,13 @@ A list of all assignment operators:
 >>=,	x >>= 3,	x = x >> 3	
 <<=	,x <<= 3,	x = x << 3
 
-Comparison operators are used to compare two values (or variables). This is important in programming, because it helps us to find answers and make decisions.
-Example
+##Comparison operators are used to compare two values (or variables). This is important in programming, because it helps us to find answers and make decisions.
+**Example**
 int x = 5;
 int y = 3;
 cout << (x > y); // returns 1 (true) because 5 is greater than 3
 
-COMPARISION OPERATORS
+##COMPARISION OPERATORS
 ==	,Equal to		
 !=,	Not equal		
 >	,Greater than	
@@ -296,15 +280,15 @@ COMPARISION OPERATORS
 >=,	Greater than or equal to	
 <=,	Less than or equal to
 
-As with comparison operators, you can also test for true (1) or false (0) values with logical operators.
+##As with comparison operators, you can also test for true (1) or false (0) values with logical operators.
 SOME OPERATORS WITH NAME AND DISCRIPTIONA ARE FOLLOWING:-
 && -	Logical and,	Returns true if both statements are true
 || -	Logical or	,Returns true if one of the statements is true	
 !-	Logical not,	Reverse the result, returns false if the result is true
 
-When a calculation contains more than one operator, C++ follows order of operations rules to decide which part to calculate first.
+##When a calculation contains more than one operator, C++ follows order of operations rules to decide which part to calculate first.
 
-Here are some common operators in C++, from highest to lowest priority:
+##Here are some common operators in C++, from highest to lowest priority:
 () - Parentheses
 *, /, % - Multiplication, Division, Modulus
 +, - - Addition, Subtraction
@@ -315,7 +299,7 @@ Here are some common operators in C++, from highest to lowest priority:
 = - Assignment
 
 
-The + operator can be used between strings to add them together to make a new string. This is called concatenation:
+##The + operator can be used between strings to add them together to make a new string. This is called concatenation:
 Example
 string firstName = "John ";
 string lastName = "Doe";
@@ -323,21 +307,21 @@ string fullName = firstName + lastName;
 cout << fullName;
 
 
-To get the length of a string, use the length() function:
+##To get the length of a string, use the length() function:
 Example
 string txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 cout << "The length of the txt string is: " << txt.length();
 
 
-You can access the characters in a string by referring to its index number inside square brackets [].
+##You can access the characters in a string by referring to its index number inside square brackets [].
 This example prints the first character in myString:
-Example
+**Example**
 string myString = "Hello";
 cout << myString[0];
 // Outputs H
 
 
-Because strings must be written within quotes, C++ will misunderstand this string, and generate an error
+##Because strings must be written within quotes, C++ will misunderstand this string, and generate an error
 The solution to avoid this problem, is to use the backslash escape character.
 The backslash (\) escape character turns special characters into string characters
 \' 	-  '	Single quote
@@ -345,8 +329,8 @@ The backslash (\) escape character turns special characters into string characte
 \\  -	 \ 	Backslash
 
 
-It is possible to use the extraction operator >> on cin to store a string entered by a user:
-Example
+##It is possible to use the extraction operator >> on cin to store a string entered by a user:
+**Example**
 string firstName;
 cout << "Type your first name: ";
 cin >> firstName; // get user input from the keyboard
@@ -355,15 +339,15 @@ cout << "Your name is: " << firstName;
 // Your name is: John
 
 
-If you prefer to print true and false as words instead of 1 and 0, you can use the boolalpha manipulator:
-Example
+##If you prefer to print true and false as words instead of 1 and 0, you can use the boolalpha manipulator:
+**Example**
 bool isCodingFun = true;
 bool isFishTasty = false;
 cout << boolalpha; // enable printing "true"/"false"
 cout << isCodingFun << "\n";   // Outputs true
 cout << isFishTasty << "\n";  // Outputs false
 
-Example
+**Example**
 Output "Old enough to vote!" if myAge is greater than or equal to 18. Otherwise output "Not old enough to vote.":
 int myAge = 25;
 int votingAge = 18;
@@ -375,14 +359,14 @@ if (myAge >= votingAge) {
 // Outputs: Old enough to vote!
 
 
-C++ has the following conditional statements:
+##C++ has the following conditional statements:
 Use if to specify a block of code to be executed, if a condition is true
 Use else to specify a block of code to be executed, if the same condition is false
 Use else if to specify a new condition to test, if the first condition is false
 Use switch to specify many alternative blocks of code to be executed
 
-Use the if statement to specify a block of C++ code to be executed if a condition is true.
-Syntax
+##Use the if statement to specify a block of C++ code to be executed if a condition is true.
+**Syntax**
 if (condition) {
   // block of code to be executed if the condition is true}
 
@@ -394,9 +378,9 @@ if (condition) {
   // block of code to be executed if the condition is false
 }
 
-Use the else if statement to specify a new condition to test if the first condition is false.
+##Use the else if statement to specify a new condition to test if the first condition is false.
 You can use else if to check multiple conditions, one after another.
-Syntax
+**Syntax**
 if (condition1) {
   // block of code to be executed if condition1 is true
 } else if (condition2) {
@@ -405,9 +389,9 @@ if (condition1) {
   // block of code to be executed if both conditions are false
 }
 
-you can also place an if statement inside another if. This is called a nested if statement.
+##you can also place an if statement inside another if. This is called a nested if statement.
 A nested if lets you check for a condition only if another condition is already true.
-Syntax
+**Syntax**
 if (condition1) {
   // code to run if condition1 is true
   if (condition2) {
@@ -415,7 +399,7 @@ if (condition1) {
   }
 }
 
-Example
+**Example**
 int x = 15;
 int y = 25;
 if (x > 10) {
@@ -428,7 +412,7 @@ if (x > 10) {
 RESULT:x is greater than 10
 y is also greater than 20
 
-Real Life Example:
+**Real Life Example:**
 This example shows how you can use if..else to "open a door" if the user enters the correct code:
 Example
 int doorCode = 1337;
@@ -438,8 +422,8 @@ if (doorCode == 1337) {
   cout << "Wrong code.\nThe door remains closed.\n";
 }
 
-Use the switch statement to select one of many code blocks to be executed.
-Syntax
+##Use the switch statement to select one of many code blocks to be executed.
+**Syntax**
 switch(expression) {
   case x:
     // code block
@@ -451,7 +435,7 @@ switch(expression) {
     // code block
 }
 
-This is how it works:
+##This is how it works:
 The switch expression is evaluated once
 The value of the expression is compared with the values of each case
 If there is a match, the associated block of code is executed
@@ -474,39 +458,39 @@ break;
 }
 //results thursday
 
-When C++ reaches a break keyword, it breaks out of the switch block.
+##When C++ reaches a break keyword, it breaks out of the switch block.
 This will stop the execution of more code and case testing inside the block.
 
 
-Loops can execute a block of code as long as a specified condition is reached.
+##Loops can execute a block of code as long as a specified condition is reached.
 Loops are handy because they save time, reduce errors, and they make code more readable.
 The while loop loops through a block of code as long as a specified condition is true:
-Syntax
+**Syntax**
 while (condition) {
   // code block to be executed
 }
 
-The do/while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true. Then it will repeat the loop as long as the condition is true.
-Syntax
+##The do/while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true. Then it will repeat the loop as long as the condition is true.
+**Syntax**
 do {
   // code block to be executed
 }
 while (condition);
 
 
-When you know exactly how many times you want to loop through a block of code, use the for loop instead of a while loop:
-Syntax
+##When you know exactly how many times you want to loop through a block of code, use the for loop instead of a while loop:
+**Syntax**
 for (statement 1; statement 2; statement 3) {
   // code block to be executed
 }
 
-Statement 1 is executed (one time) before the execution of the code block.
-Statement 2 defines the condition for executing the code block.
-Statement 3 is executed (every time) after the code block has been executed.
+##Statement 1 is executed (one time) before the execution of the code block.
+##Statement 2 defines the condition for executing the code block.
+##Statement 3 is executed (every time) after the code block has been executed.
 
-It is also possible to place a loop inside another loop. This is called a nested loop.
+##It is also possible to place a loop inside another loop. This is called a nested loop.
 The "inner loop" will be executed one time for each iteration of the "outer loop":
-Example
+**Example**
 // Outer loop
 for (int i = 1; i <= 2; ++i) {
   cout << "Outer: " << i << "\n"; // Executes 2 times
