@@ -201,6 +201,57 @@ cout << "Cost per item: " << cost_per_item << currency << "\n";
 cout << "Total cost = " << total_cost << currency << "\n";
 
 
+Operators are used to perform operations on variables and values.
+
+C++ divides the operators into the following groups:
+Arithmetic operators
+Assignment operators
+Comparison operators
+Logical operators
+Bitwise operators
+
+Arithmetic operators are used to perform common mathematical operations.
+Operator	Name	Description	
+Example
++	Addition	Adds together two values	x + y	
+-	Subtraction	Subtracts one value from another	x - y	
+*	Multiplication	Multiplies two values	x * y	
+/	Division	Divides one value by another	x / y	
+%	Modulus	Returns the division remainder	x % y	
+++	Increment	Increases the value of a variable by 1	++x	
+--	Decrement	Decreases the value of a variable by 1	--x
+
+EXAMPLE:
+int x = 10;
+int y = 3;
+cout << (x + y) << "\n"; // 13
+cout << (x - y) << "\n"; // 7
+cout << (x * y) << "\n"; // 30
+cout << (x / y) << "\n"; // 3 (integer division)
+cout << (x % y) << "\n"; // 1
+int z = 5;
+++z;
+cout << z << "\n"; // 6
+--z;
+cout << z << "\n"; // 5
+
+A list of all assignment operators:
+
+=	,x = 5,	x = 5	
++=,	x += 3,	x = x + 3	
+-=,	x -= 3,	x = x - 3	
+*=,	x *= 3,	x = x * 3	
+/=,	x /= 3,	x = x / 3	
+%=,	x %= 3,	x = x % 3	
+&=,	x &= 3,	x = x & 3	
+|=,	x |= 3,	x = x | 3	
+^=,	x ^= 3,	x = x ^ 3	
+>>=,	x >>= 3,	x = x >> 3	
+<<=	,x <<= 3,	x = x << 3
+
+
+
+
 
 
 
