@@ -1,1 +1,40 @@
+PROBLEM 1  :print Hello,C++
+SOLUTION 1 :
+#include <iostream>
+using namespace std;
+int main() {
+  cout << "Hello,C++";
+  return 0;
+}
+RESULT :Hello,C++
+
+
+PROBLEM 2: print your name and age in two different lines
+SOLUTION 2:
+#include <iostream>
+using namespace std;
+
+int main() {
+ cout << "Peter"<< "\n"; 
+ cout << "55";
+  return 0;
+}
+RESULT: 
+Peter
+55
+
+
+
+PROBLEM 3 : specify length and breadth of a rectangle and find its area.
+SOLUTION 3 : 
+#include <iostream>
+using namespace std;
+int main(){
+int length = 10;
+int breadth = 20;
+area = length*breadth;
+cout << area;
+return 0;
+}
+RESULT: 200
 
