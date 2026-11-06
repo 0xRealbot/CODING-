@@ -83,3 +83,16 @@ int main() {
     return 0;
 }
 
+
+PROBLEM 7:CHECK THE MINIMUM AGE OF CANDIDATE ENTERED BY USER .
+SOLUTION 7:
+int myAge;
+int votingAge = 18;
+cin >> myage;
+if (myAge >= votingAge) {
+  cout << "Old enough to vote!";
+} else {
+  cout << "Not old enough to vote.";
+}
+
+
