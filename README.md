@@ -532,9 +532,36 @@ We have now declared a variable that holds an array of four strings. To insert v
 **Example**
 int myNumbers[5] = {10, 20, 30, 40, 50};
 cout << sizeof(myNumbers);
+## Why did the result show 20 instead of 5, when the array contains 5 elements?
+It is because the sizeof() operator returns the size of a type in bytes.
+You learned from the Data Types chapter that an int type is usually 4 bytes, so from the example above, 4 x 5 (4 bytes x 5 elements) = 20 bytes.
+To find out how many elements an array has, you have to divide the size of the array by the size of the first element in the array:
+**Example**
+int myNumbers[5] = {10, 20, 30, 40, 50};
+int getArrayLength = sizeof(myNumbers) / sizeof(myNumbers[0]);
+cout << getArrayLength;
 
-
-
+## Multi-Dimensional Arrays
+A multi-dimensional array is an array of arrays.
+To declare a multi-dimensional array, define the variable type, specify the name of the array followed by square brackets which specify how many elements the main array has, followed by another set of square brackets which indicates how many elements the sub-arrays have:
+**string letters[2][4];**
+## As with ordinary arrays, you can insert values with an array literal - a comma-separated list inside curly braces. In a multi-dimensional array, each element in an array literal is another array literal.
+string letters[2][4] = {
+  { "A", "B", "C", "D" },
+  { "E", "F", "G", "H" }
+};
+## Each set of square brackets in an array declaration adds another dimension to an array. An array like the one above is said to have two dimensions.
+Arrays can have any number of dimensions. The more dimensions an array has, the more complex the code becomes. The following array has three dimensions:
+string letters[2][2][2] = {
+  {
+    { "A", "B" },
+    { "C", "D" }
+  },
+  {
+    { "E", "F" },
+    { "G", "H" }
+  }
+}
 
 
 
