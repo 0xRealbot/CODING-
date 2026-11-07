@@ -609,8 +609,41 @@ myCar2.year = 1969;
 cout << myCar1.brand << " " << myCar1.model << " " << myCar1.year << "\n";
 cout << myCar2.brand << " " << myCar2.model << " " << myCar2.year << "\n";
 
+##  ENUMS
+To create an enum, use the enum keyword, followed by the name of the enum, and separate the enum items with a comma:-
+enum Level {
+  LOW,
+  MEDIUM,
+  HIGH
+};
 
+## To access the enum, you must create a variable of it.
+Inside the main() method, specify the enum keyword, followed by the name of the enum (Level) and then the name of the enum variable (myVar in this example):
+enum Level myVar;
 
+## A reference variable is an alias for an existing variable. It is created using the & operator
+**string food = "Pizza";  // food variable
+string &meal = food;    // reference to food**
+
+## If you change the value of a reference variable, the original variable will also change (and vice versa), because they both refer to the same memory location:
+**Example**
+string food = "Pizza"; // food variable
+string &meal = food;   // reference to food
+
+meal = "Burger"; // changes both meal and food
+
+cout << food << "\n"; // Outputs Burger
+cout << meal << "\n"; // Outputs Burger
+
+## memory address
+In the example from the previous page, the & operator was used to create a reference variable. But it can also be used to get the memory address of a variable; which is the location of where the variable is stored on the computer.
+When a variable is created in C++, a memory address is assigned to the variable. And when we assign a value to the variable, it is stored in this memory address.
+To access it, use the & operator, and the result will represent where the variable is stored:
+**example**
+string food = "Pizza";
+cout << &food;
+// Outputs 0x6dfed4
+HERE THIS IS ADDRESS WHEE I WAS STORED
 
 
 
