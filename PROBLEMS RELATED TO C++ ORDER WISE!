@@ -134,6 +134,17 @@ return 0;
 
 PROBLEM 10:MAKE A TABLE OF 10 USING FOR LOOP.
 SOLUTION 10:
+#include <iostream>
+using namespace std;
+int main(){
+int i = 10;
+for (int j = 1;j<11;j++){
+cout << i*j << "\n";
+}
+return 0;
+}
+
+
 
 
 
