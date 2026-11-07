@@ -646,12 +646,134 @@ cout << &food;
 HERE THIS IS ADDRESS WHEE I WAS STORED
 
 
+## POINTERS
+A pointer however, is a variable that stores the memory address as its value.
+A pointer variable points to a data type (like int or string) of the same type, and is created with the * operator. The address of the variable you're working with is assigned to the pointer
+**example**
+string food = "Pizza";  // A food variable of type string
+string* ptr = &food;    // A pointer variable, with the name ptr, that stores the address of food
+// Output the value of food (Pizza)
+cout << food << "\n";
+// Output the memory address of food (0x6dfed4)
+cout << &food << "\n";
+// Output the memory address of food with the pointer (0x6dfed4)
+cout << ptr << "\n";
+**example explained**
+Create a pointer variable with the name ptr, that points to a string variable, by using the asterisk sign * (string* ptr). Note that the type of the pointer has to match the type of the variable you're working with.
+Use the & operator to store the memory address of the variable called food, and assign it to the pointer.
+Now, ptr holds the value of food's memory address.
+
+## in the example from the above, we used the pointer variable to get the memory address of a variable (used together with the & reference operator). However, you can also use the pointer to get the value of the variable, by using the * operator (the dereference operator):
+**Example**
+string food = "Pizza";  // Variable declaration
+string* ptr = &food;    // Pointer declaration
+// Reference: Output the memory address of food with the pointer (0x6dfed4)
+cout << ptr << "\n";
+// Dereference: Output the value of food with the pointer (Pizza)
+cout << *ptr << "\n";
+
+## You can also change the pointer's value. But note that this will also change the value of the original variable:
+**Example**
+string food = "Pizza";
+string* ptr = &food;
+// Output the value of food (Pizza)
+cout << food << "\n";
+// Output the memory address of food (0x6dfed4)
+cout << &food << "\n";
+// Access the memory address of food and output its value (Pizza)
+cout << *ptr << "\n";
+// Change the value of the pointer
+*ptr = "Hamburger";
+// Output the new value of the pointer (Hamburger)
+cout << *ptr << "\n";
+// Output the new value of the food variable (Hamburger)
+cout << food << "\n";
 
 
+## memory management
+Memory management is the process of controlling how much memory your program uses - and how it is used. This includes creating, using, and releasing memory when it's no longer needed.
+When you create a variable in C++, the compiler automatically reserves space in memory for it.
+**For example:**
+int myNumber = 10;
+The line above tells the program: "I need space to store an integer." C++ handles this memory automatically, so in this case, you dont have to worry about managing memory.
+## You can check how much memory a variable type uses with the sizeof operator:
+**Example**
+#include <iostream>
+using namespace std;
+int main() {
+  int myInt;
+  float myFloat;
+  double myDouble;
+  char myChar;
+  cout << sizeof(myInt) << "\n";     // 4 bytes (typically)
+  cout << sizeof(myFloat) << "\n";   // 4 bytes
+  cout << sizeof(myDouble) << "\n";  // 8 bytes
+  cout << sizeof(myChar) << "\n";    // 1 byte
+return 0;}
 
+## Do You Have to Manage Memory Yourself?
+Sometimes yes - and sometimes no.
+For normal variables (like int x = 10;), C++ takes care of the memory for you.
+But when you want to create memory manually while the program is running (for example: based on user input), you need to manage it yourself and clean it up when you're done.
+If your program uses too much memory, or forgets to clean up memory it no longer needs, it can lead to slow performance or even crashes.
+That's why understanding memory is important. It gives you more control and helps avoid common bugs.
 
+## The new keyword lets you manage memory yourself.
+In the example below, we create memory space for an integer using new, store the value 35 in it, and print it using a pointer:
+**Example**
+int* ptr = new int;
+*ptr = 35;
+cout << *ptr;
 
+## When you create something with new, it's your job to remove it when you're done.
+To do that, use delete:
+**Example**
+delete ptr;
 
+**Example**
+#include <iostream>
+#include <string>
+using namespace std;
 
+int main() {
+  int numGuests;
+  cout << "How many guests? ";
+  cin >> numGuests;
 
+  // Check for invalid input
+  if (numGuests <= 0) {
+    cout << "Number of guests must be at least 1.\n";
+    return 0;
+  }
 
+  // Create memory space for x guests (an array of strings)
+  string* guests = new string[numGuests];
+
+  // Ignore the leftover newline character after reading numGuests
+  cin.ignore();
+
+  // Enter guest names
+  for (int i = 0; i < numGuests; i++) {
+    cout << "Enter name for guest " << (i + 1) << ": ";
+    getline(cin, guests[i]); // Read the full name (including spaces)
+  }
+
+  // Show all guests
+  cout << "\nGuests checked in:\n";
+  for (int i = 0; i < numGuests; i++) {
+    cout << guests[i] << "\n";
+  }
+
+  delete[] guests; // Clean up memory
+  return 0;
+}
+
+## When to Use new
+In most cases, you don't need to use new. C++ will automatically handle memory for normal variables like:
+**int age = 35;
+string name = "John";**
+But sometimes, you have to manage memory yourself - especially when:
+You don't know how much memory you'll need in advance (like how many guests or scores)
+You want to create memory while the program is running, based on user input
+You need to store large or flexible amounts of data
+You want full manual control over memory (e.g., performance-critical code)
