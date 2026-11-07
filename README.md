@@ -500,6 +500,39 @@ for (int i = 1; i <= 2; ++i) {
   }
 }
 
+## you have already seen the break statement used in an earlier chapter of this tutorial. It was used to "jump out" of a switch statement.
+The break statement can also be used to jump out of a loop.
+This example jumps out of the loop when i is equal to 4:
+**Example**
+for (int i = 0; i < 10; i++) {
+  if (i == 4) {
+    break;
+  }
+  cout << i << "\n";
+}
+## C++ Continue
+The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
+This example skips the value of 4:
+**Example**
+for (int i = 0; i < 10; i++) {
+  if (i == 4) {
+    continue;
+  }
+  cout << i << "\n";
+
+## arrays
+Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.
+To declare an array, define the variable type, specify the name of the array followed by square brackets and specify the number of elements it should store:
+**string cars[4];**
+We have now declared a variable that holds an array of four strings. To insert values to it, we can use an array literal - place the values in a comma-separated list, inside curly braces:
+**string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"};**
+**in C++, you don't have to specify the size of the array. The compiler is smart enough to determine the size of the array based on the number of inserted values**
+
+## To get the size of an array, you can use the sizeof() operator:
+**Example**
+int myNumbers[5] = {10, 20, 30, 40, 50};
+cout << sizeof(myNumbers);
+
 
 
 
