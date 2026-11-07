@@ -144,6 +144,19 @@ cout << i*j << "\n";
 return 0;
 }
 
+PROBLEM 11:MAKE A INT ARRAY HAVING 5 NUMBERS.SET FIRST ELEMENT TO 10 AND LAST ELEMENT TO 50,PRINT THEM
+SOLUTION 11:
+#include <iostream>
+using namespace std;
+int main() {
+    int arr[5] = {10, 0, 0, 0, 50};
+    for (int i = 0; i < 5; i++) {
+        cout << arr[i] << " ";
+    }
+    return 0;
+}
+
+
 
 
 
