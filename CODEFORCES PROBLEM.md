@@ -3,7 +3,7 @@
 ## ABOVE IS THE LINK TO COFEFORCE FOR PRACTICE
 
 
-## PROBLEM 1:SAY HELLO
+# PROBLEM 1:SAY HELLO
 Given a name S. Print "Hello, (name)" without parentheses.
 
 **Input**
@@ -37,7 +37,7 @@ int main(){
 
 
 
-## PROBLEM 2:BASIC DATA TYPES
+# PROBLEM 2:BASIC DATA TYPES
 
 The following lines show some C++ data types, their format specifiers and their most common bit widths:
 
@@ -128,7 +128,7 @@ int main() {
 
 
 
-## PROBLEM 3:SIMPLE CALCULATOR
+# PROBLEM 3:SIMPLE CALCULATOR
 
 Given two numbers X and Y. Print the summation and multiplication and subtraction of these 2 numbers.
 
@@ -177,7 +177,7 @@ int main() {
 
 
 
-## PROBLEM 4:DIFFERENCE
+# PROBLEM 4:DIFFERENCE
 
 Given four numbers A, B, C and D. Print the result of the following equation :
 
