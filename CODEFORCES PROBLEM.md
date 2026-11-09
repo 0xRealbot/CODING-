@@ -5,6 +5,7 @@ https://codeforces.com/group/MWSDmqGsZm/contest/219158
 
 ## PROBLEM 1:SAY HELLO
 Given a name S. Print "Hello, (name)" without parentheses.
+
 Input
 Only one line containing a string S.
 Output
