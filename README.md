@@ -630,429 +630,808 @@ Output "Old enough to vote!" if myAge is greater than or equal to 18. Otherwise 
 int myAge = 25;
 
 int votingAge = 18;
+
 if (myAge >= votingAge) {
+
   cout << "Old enough to vote!";
+  
 } else {
+
   cout << "Not old enough to vote.";
+  
 }
 // Outputs: Old enough to vote!
 
 
+
 ## C++ has the following conditional statements:
+
 Use if to specify a block of code to be executed, if a condition is true
+
 Use else to specify a block of code to be executed, if the same condition is false
+
 Use else if to specify a new condition to test, if the first condition is false
+
 Use switch to specify many alternative blocks of code to be executed
 
+
 ## Use the if statement to specify a block of C++ code to be executed if a condition is true.
+
 **Syntax**
+
 if (condition) {
+
   // block of code to be executed if the condition is true}
+  
 
 Use the else statement to specify a block of code to be executed if the condition is false.
+
 Syntax
+
 if (condition) {
+
   // block of code to be executed if the condition is true
+  
 } else {
+
   // block of code to be executed if the condition is false
+  
 }
+
 
 ## Use the else if statement to specify a new condition to test if the first condition is false.
+
 You can use else if to check multiple conditions, one after another.
+
 **Syntax**
+
 if (condition1) {
+
   // block of code to be executed if condition1 is true
+  
 } else if (condition2) {
+
   // block of code to be executed if condition1 is false and condition2 is true
+  
 } else {
+
   // block of code to be executed if both conditions are false
+  
 }
+
 
 ## you can also place an if statement inside another if. This is called a nested if statement.
+
 A nested if lets you check for a condition only if another condition is already true.
+
 **Syntax**
+
 if (condition1) {
+
   // code to run if condition1 is true
+  
   if (condition2) {
+  
     // code to run if both condition1 and condition2 are true
+    
   }
+  
 }
+
 
 **Example**
+
 int x = 15;
+
 int y = 25;
+
 if (x > 10) {
+
   cout << "x is greater than 10\n";
+  
   // Nested if
+  
   if (y > 20) {
+  
     cout << "y is also greater than 20\n";
+    
   }
+  
 }
+
 RESULT:x is greater than 10
+
 y is also greater than 20
 
+
 **Real Life Example:**
+
 This example shows how you can use if..else to "open a door" if the user enters the correct code:
+
 Example
+
 int doorCode = 1337;
+
 if (doorCode == 1337) {
+
   cout << "Correct code.\nThe door is now open.\n";
+  
 } else {
+
   cout << "Wrong code.\nThe door remains closed.\n";
+  
 }
+
 
 ## Use the switch statement to select one of many code blocks to be executed.
+
 **Syntax**
+
 switch(expression) {
+
   case x:
+  
     // code block
+
     break;
+    
   case y:
+  
     // code block
+    
     break;
+    
   default:
+  
     // code block
+    
 }
+
 
 ## This is how it works:
+
 The switch expression is evaluated once
+
 The value of the expression is compared with the values of each case
+
 If there is a match, the associated block of code is executed
+
 The break and default keywords are optional, and will be described later in this chapter
 
+
+
 int day = 4
+
 switch (day){
+
 case 1:
+
 cout << "monday";
+
 break;
+
 case 2:
+
 cout << "tuesday";
+
 break;
+
 case 3:
+
 cout << "wednesday";
+
 break;
+
 case 4 :
+
 cout << "thursday";
+
 break;
+
 }
+
 //results thursday
 
+
 ## When C++ reaches a break keyword, it breaks out of the switch block.
+
 This will stop the execution of more code and case testing inside the block.
 
 
+
 ## Loops can execute a block of code as long as a specified condition is reached.
+
 Loops are handy because they save time, reduce errors, and they make code more readable.
+
 The while loop loops through a block of code as long as a specified condition is true:
+
 **Syntax**
+
 while (condition) {
+
   // code block to be executed
+  
 }
 
-## The do/while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true. Then it will repeat the loop as long as the condition is true.
+
+## The do/while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true. Then it will repeat the loop as long as the condition is true
+
 **Syntax**
+
 do {
+
   // code block to be executed
+  
 }
+
 while (condition);
 
 
+
 ## When you know exactly how many times you want to loop through a block of code, use the for loop instead of a while loop:
+
 **Syntax**
+
 for (statement 1; statement 2; statement 3) {
+
   // code block to be executed
+  
 }
+
 
 ## Statement 1 is executed (one time) before the execution of the code block.
+
 ## statement 2 defines the condition for executing the code block.
+
 ## Statement 3 is executed (every time) after the code block has been executed.
 
+
 ## It is also possible to place a loop inside another loop. This is called a nested loop.
+
 The "inner loop" will be executed one time for each iteration of the "outer loop":
+
 **Example**
+
+
 // Outer loop
+
 for (int i = 1; i <= 2; ++i) {
+
   cout << "Outer: " << i << "\n"; // Executes 2 times
+  
   // Inner loop
+  
   for (int j = 1; j <= 3; ++j) {
+  
     cout << " Inner: " << j << "\n"; // Executes 6 times (2 * 3)
+    
   }
+  
 }
+
 
 ## you have already seen the break statement used in an earlier chapter of this tutorial. It was used to "jump out" of a switch statement.
+
 The break statement can also be used to jump out of a loop.
+
 This example jumps out of the loop when i is equal to 4:
+
 **Example**
+
 for (int i = 0; i < 10; i++) {
+
   if (i == 4) {
+
     break;
+    
   }
+  
   cout << i << "\n";
+  
 }
+
 ## C++ Continue
+
 The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
+
 This example skips the value of 4:
+
 **Example**
+
 for (int i = 0; i < 10; i++) {
+
   if (i == 4) {
+  
     continue;
+    
   }
+  
   cout << i << "\n";
+  
 
 ## arrays
+
 Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.
-To declare an array, define the variable type, specify the name of the array followed by square brackets and specify the number of elements it should store:
+
+To declare an array, define the variable type, specify the name of the array followed by square brackets and specify the 
+
+number of elements it should store:
+
 **string cars[4];**
+
 We have now declared a variable that holds an array of four strings. To insert values to it, we can use an array literal - place the values in a comma-separated list, inside curly braces:
+
 **string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"};**
+
 **in C++, you don't have to specify the size of the array. The compiler is smart enough to determine the size of the array based on the number of inserted values**
 
+
 ## To get the size of an array, you can use the sizeof() operator:
+
 **Example**
+
 int myNumbers[5] = {10, 20, 30, 40, 50};
+
 cout << sizeof(myNumbers);
+
 ## Why did the result show 20 instead of 5, when the array contains 5 elements?
+
 It is because the sizeof() operator returns the size of a type in bytes.
+
 You learned from the Data Types chapter that an int type is usually 4 bytes, so from the example above, 4 x 5 (4 bytes x 5 elements) = 20 bytes.
+
 To find out how many elements an array has, you have to divide the size of the array by the size of the first element in the array:
+
 **Example**
+
 int myNumbers[5] = {10, 20, 30, 40, 50};
+
 int getArrayLength = sizeof(myNumbers) / sizeof(myNumbers[0]);
+
 cout << getArrayLength;
 
+
 ## Multi-Dimensional Arrays
+
 A multi-dimensional array is an array of arrays.
+
 To declare a multi-dimensional array, define the variable type, specify the name of the array followed by square brackets which specify how many elements the main array has, followed by another set of square brackets which indicates how many elements the sub-arrays have:
+
 **string letters[2][4];**
+
 ## As with ordinary arrays, you can insert values with an array literal - a comma-separated list inside curly braces. In a multi-dimensional array, each element in an array literal is another array literal.
+
 string letters[2][4] = {
+
   { "A", "B", "C", "D" },
+  
   { "E", "F", "G", "H" }
+  
 };
+
 ## Each set of square brackets in an array declaration adds another dimension to an array. An array like the one above is said to have two dimensions.
+
 Arrays can have any number of dimensions. The more dimensions an array has, the more complex the code becomes. The following array has three dimensions:
+
 string letters[2][2][2] = {
+
   {
+  
     { "A", "B" },
+    
     { "C", "D" }
-  },
-  {
-    { "E", "F" },
-    { "G", "H" }
+    
   }
+  
+  {
+  
+    { "E", "F" }
+    
+    { "G", "H" }
+    
+  }
+  
 }
+
 
 
 ## STRUCTURES
+
 Structures (also called structs) are a way to group several related variables into one place.
+
 Each variable in the structure is known as a member of the structure.
+
 Unlike an array, a structure can contain many different data types: int, string, bool, etc.
+
 **EXAMPLE**
+
 struct {             // Structure declaration
+
   int myNum;         // Member (int variable)
+  
   string myString;   // Member (string variable)
+  
 } myStructure;       // Structure variable
 
+
 ## ACCESSS STRUCTURE
+
 To access members of a structure, use the dot syntax (.):
+
 **Example**
+
 Assign data to members of a structure and print it:
+
 // Create a structure variable called myStructure
+
 struct {
+
   int myNum;
+  
   string myString;
+  
 } myStructure;
+
 // Assign values to members of myStructure
+
 myStructure.myNum = 1;
+
 myStructure.myString = "Hello World!";
+
 // Print members of myStructure
+
 cout << myStructure.myNum << "\n";
+
 cout << myStructure.myString << "\n";
 
+
 ## STRUCTURE CAN BE USEFUL TO SHOW BASIC DETAILS OF SOMETHING
+
 **example**
+
 struct {
+
   string brand;
+  
   string model;
+  
   int year;
+  
 } myCar1, myCar2; // We can add variables by separating them with a comma here
+
 // Put data into the first structure
+
 myCar1.brand = "BMW";
+
 myCar1.model = "X5";
+
 myCar1.year = 1999;
+
 // Put data into the second structure
+
 myCar2.brand = "Ford";
+
 myCar2.model = "Mustang";
+
 myCar2.year = 1969;
+
 // Print the structure members
+
 cout << myCar1.brand << " " << myCar1.model << " " << myCar1.year << "\n";
+
 cout << myCar2.brand << " " << myCar2.model << " " << myCar2.year << "\n";
 
+
 ##  ENUMS
+
 To create an enum, use the enum keyword, followed by the name of the enum, and separate the enum items with a comma:-
+
 enum Level {
+
   LOW,
+  
   MEDIUM,
+  
   HIGH
+  
 };
 
+
 ## To access the enum, you must create a variable of it.
+
 Inside the main() method, specify the enum keyword, followed by the name of the enum (Level) and then the name of the enum variable (myVar in this example):
+
 enum Level myVar;
 
+
 ## A reference variable is an alias for an existing variable. It is created using the & operator
+
 **string food = "Pizza";  // food variable
+
 string &meal = food;    // reference to food**
 
+
 ## If you change the value of a reference variable, the original variable will also change (and vice versa), because they both refer to the same memory location:
+
 **Example**
+
 string food = "Pizza"; // food variable
+
 string &meal = food;   // reference to food
+
 
 meal = "Burger"; // changes both meal and food
 
+
 cout << food << "\n"; // Outputs Burger
+
 cout << meal << "\n"; // Outputs Burger
 
+
 ## memory address
+
 In the example from the previous page, the & operator was used to create a reference variable. But it can also be used to get the memory address of a variable; which is the location of where the variable is stored on the computer.
+
 When a variable is created in C++, a memory address is assigned to the variable. And when we assign a value to the variable, it is stored in this memory address.
+
 To access it, use the & operator, and the result will represent where the variable is stored:
+
 **example**
+
 string food = "Pizza";
+
 cout << &food;
+
 // Outputs 0x6dfed4
+
 HERE THIS IS ADDRESS WHEE I WAS STORED
 
 
+
 ## POINTERS
+
 A pointer however, is a variable that stores the memory address as its value.
+
 A pointer variable points to a data type (like int or string) of the same type, and is created with the * operator. The address of the variable you're working with is assigned to the pointer
+
 **example**
+
 string food = "Pizza";  // A food variable of type string
+
 string* ptr = &food;    // A pointer variable, with the name ptr, that stores the address of food
+
 // Output the value of food (Pizza)
+
 cout << food << "\n";
+
 // Output the memory address of food (0x6dfed4)
+
 cout << &food << "\n";
+
 // Output the memory address of food with the pointer (0x6dfed4)
+
 cout << ptr << "\n";
+
 **example explained**
+
 Create a pointer variable with the name ptr, that points to a string variable, by using the asterisk sign * (string* ptr). Note that the type of the pointer has to match the type of the variable you're working with.
+
 Use the & operator to store the memory address of the variable called food, and assign it to the pointer.
+
 Now, ptr holds the value of food's memory address.
 
+
 ## in the example from the above, we used the pointer variable to get the memory address of a variable (used together with the & reference operator). However, you can also use the pointer to get the value of the variable, by using the * operator (the dereference operator):
+
 **Example**
+
 string food = "Pizza";  // Variable declaration
+
 string* ptr = &food;    // Pointer declaration
+
 // Reference: Output the memory address of food with the pointer (0x6dfed4)
+
 cout << ptr << "\n";
+
 // Dereference: Output the value of food with the pointer (Pizza)
+
 cout << *ptr << "\n";
 
+
 ## You can also change the pointer's value. But note that this will also change the value of the original variable:
+
 **Example**
+
 string food = "Pizza";
+
 string* ptr = &food;
+
 // Output the value of food (Pizza)
+
 cout << food << "\n";
+
 // Output the memory address of food (0x6dfed4)
+
 cout << &food << "\n";
+
 // Access the memory address of food and output its value (Pizza)
+
 cout << *ptr << "\n";
+
 // Change the value of the pointer
+
 *ptr = "Hamburger";
+
 // Output the new value of the pointer (Hamburger)
+
 cout << *ptr << "\n";
+
 // Output the new value of the food variable (Hamburger)
+
 cout << food << "\n";
+
 
 
 ## memory management
+
 Memory management is the process of controlling how much memory your program uses - and how it is used. This includes creating, using, and releasing memory when it's no longer needed.
+
 When you create a variable in C++, the compiler automatically reserves space in memory for it.
+
 **For example:**
+
 int myNumber = 10;
+
 The line above tells the program: "I need space to store an integer." C++ handles this memory automatically, so in this case, you dont have to worry about managing memory.
+
 ## You can check how much memory a variable type uses with the sizeof operator:
+
 **Example**
+
 #include <iostream>
+
 using namespace std;
+
 int main() {
+
   int myInt;
+  
   float myFloat;
+  
   double myDouble;
+  
   char myChar;
+  
   cout << sizeof(myInt) << "\n";     // 4 bytes (typically)
+  
   cout << sizeof(myFloat) << "\n";   // 4 bytes
+  
   cout << sizeof(myDouble) << "\n";  // 8 bytes
+  
   cout << sizeof(myChar) << "\n";    // 1 byte
+  
 return 0;}
 
+
 ## Do You Have to Manage Memory Yourself?
+
 Sometimes yes - and sometimes no.
+
 For normal variables (like int x = 10;), C++ takes care of the memory for you.
+
 But when you want to create memory manually while the program is running (for example: based on user input), you need to manage it yourself and clean it up when you're done.
+
 If your program uses too much memory, or forgets to clean up memory it no longer needs, it can lead to slow performance or even crashes.
+
 That's why understanding memory is important. It gives you more control and helps avoid common bugs.
 
+
 ## The new keyword lets you manage memory yourself.
+
 In the example below, we create memory space for an integer using new, store the value 35 in it, and print it using a pointer:
+
 **Example**
+
 int* ptr = new int;
+
 *ptr = 35;
+
 cout << *ptr;
 
+
 ## When you create something with new, it's your job to remove it when you're done.
+
 To do that, use delete:
+
 **Example**
+
 delete ptr;
 
+
 **Example**
+
 #include <iostream>
+
 #include <string>
+
 using namespace std;
 
+
 int main() {
+
   int numGuests;
+  
   cout << "How many guests? ";
+  
   cin >> numGuests;
+  
 
   // Check for invalid input
+  
   if (numGuests <= 0) {
+  
     cout << "Number of guests must be at least 1.\n";
+    
     return 0;
+    
   }
+  
 
   // Create memory space for x guests (an array of strings)
+  
   string* guests = new string[numGuests];
+  
 
   // Ignore the leftover newline character after reading numGuests
+  
   cin.ignore();
+  
 
   // Enter guest names
+  
   for (int i = 0; i < numGuests; i++) {
+  
     cout << "Enter name for guest " << (i + 1) << ": ";
+    
     getline(cin, guests[i]); // Read the full name (including spaces)
+    
   }
+  
 
   // Show all guests
+  
   cout << "\nGuests checked in:\n";
+
+
+
   for (int i = 0; i < numGuests; i++) {
+  
     cout << guests[i] << "\n";
+    
   }
+  
 
   delete[] guests; // Clean up memory
+  
   return 0;
+  
 }
 
+
 ## When to Use new
+
 In most cases, you don't need to use new. C++ will automatically handle memory for normal variables like:
+
 **int age = 35;
+
 string name = "John";**
+
 But sometimes, you have to manage memory yourself - especially when:
+
 You don't know how much memory you'll need in advance (like how many guests or scores)
+
 You want to create memory while the program is running, based on user input
+
 You need to store large or flexible amounts of data
+
 You want full manual control over memory (e.g., performance-critical code)
