@@ -17,7 +17,7 @@ Print "Hello, " without quotes, then print name.
 
 ## SOLUTION:
 
-```#include <iostream>
+#include <iostream>
 
 #include <string> // Added this to fix the compilation error
 
@@ -33,7 +33,7 @@ int main(){
     
     return 0;
     
-}```
+}
 
 
 
@@ -90,7 +90,7 @@ Print each element on a new line in the same order it was received as input.
 
 ## SOLUTION:
 
-```#include <iostream>
+#include <iostream>
 
 using namespace std;
 
@@ -124,7 +124,7 @@ int main() {
     
     return 0;
     
-}```
+}
 
 
 
@@ -149,7 +149,7 @@ Print 3 lines that contain the following in the same order:
 
 ## SOLUTION:
 
-```#include <iostream>
+#include <iostream>
 
 using namespace std;
 
@@ -173,7 +173,7 @@ int main() {
     
     return 0;
     
-}```
+}
 
 
 
@@ -194,7 +194,7 @@ Print "Difference  =  " without quotes followed by the equation result.
 
 ## SOLUTION:
 
-```#include <iostream>
+#include <iostream>
 
 using namespace std;
 
@@ -220,5 +220,56 @@ int main() {
     
     return 0;
     
-    }```
+    }
+
+
+    ### PROBLEM 5:AREA OF CIRCLE
+    
+    Given a number R calculate the area of a circle using the following formula:
+    
+Area = π * R2.
+
+Note: consider π = 3.141592653.
+
+Input
+
+Only one line containing the number R (1  ≤  R  ≤  100).
+
+Output
+
+Print the calculated area, with 9 digits after the decimal point.
+
+
+## SOLUTION:
+
+#include <iostream>
+
+#include <iomanip>
+
+using namespace std;
+
+int main() {
+
+    // 1. Create a variable for the radius
+    
+    double R;
+    
+    cin >> R;
+    
+    // 2. Define the exact value of pi given in the problem
+    
+    double PI = 3.141592653;
+    
+    // 3. Calculate the area (R squared is just R * R)
+    
+    double area = PI * R * R;
+
+    // 4. Print the result with exactly 9 decimal places
+    
+    cout << fixed << area << endl;
+
+    return 0;
+    
+}
+
 
