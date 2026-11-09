@@ -1,355 +1,634 @@
 # 🚀 My Beginner Programming & C++ Journey
+
 ## THINGS WHICH WILL BE COVERED
 
+
 C++ Syntax,
+
 C++ Output,
+
 C++ Comments,
-C++ Variables,
+
+C++ Variables
+
 C++ User Input,
+
 C++ Data Types,
+
 C++ Operators,
+
 C++ Strings,
+
 C++ Math,
+
 C++ Booleans,
+
 C++ If...Else,
+
 C++ Switch,
+
 C++ While Loop,
+
 C++ For Loop,
+
 C++ Break/Continue,
+
 C++ Arrays,
+
 C++ Structures,
+
 C++ Enums,
+
 C++ References,
+
 C++ Pointers,
+
 C++ Memory Mgmt,
+
 function,
+
 errors,
+
 classes,
+
 ds.
 
+
 #LANGUAGE COVERED
+
 **C++;MARKDOWN!**
+
 
 *FOR BEGINEERS*
 
+
 ## WHAT IS C++
+
 C++ is a popular programming language.
+
 C++ is used to create computer programs, and is one of the most used languages in game development.
+
 C++ was developed as an extension of C, and both languages have almost the same syntax.
 
 
+
 ## WHY USE C++
+
 C++ is one of the world's most popular programming languages.
+
 C++ can be found in today's operating systems, Graphical User Interfaces, and embedded systems.
+
 C++ is an object-oriented programming language which gives a clear structure to programs and allows code to be reused, lowering development costs.
+
 C++ is portable and can be used to develop applications that can be adapted to multiple platforms.
+
 C++ is fun and easy to learn!
+
 As C++ is close to C, C# and Java, it makes it easy for programmers to switch to C++ or vice versa.
 
 
+
 ***syntax**
+
 #include <iostream> // it is a header file library that lets u input and output objects
+
 using namespace std; //means that we can use names for objects and variables 
+
 int main(){ //this is called function and any code inside the curly bracket will be executed
+
 cout << "hello"; // this is an object which lets u output things
+
 return 0; // ends the main function
+
 } //curly bracket to actually end the function
 
+
 **EXAMPLE**
+
 #include <iostream>
+
 using namespace std;
+
 int main() {
+
   cout << "Hello World!";
+  
   return 0;
+  
 }
+
 RESULT : Hello World!
+
 
 
 ##STD :: // it can be used in place of using namespace std; like std::cout<<"hello world";
 
+
 **EXAMPLE-**
+
 #include <iostream>
-int main() {
+
+int main() 
+
 std:: cout << "Hello World!";
+
   return 0;
+  
 }
+
 RESULT : Hello World!
 
 
+
 A computer program is a list of "instructions" to be "executed" by a computer.
+
 In a programming language, these programming instructions are called statements.
+
 It is important to end the statement with semicolon
+
 Most c++ programs contains multiple statements and they are executed one by one!
 
+
 **EXAMPLE**
+
 cout << "Hello World!";
+
 cout << "Have a good day!";
+
 return 0;
+
 RESULT : Hello World!Have a good day!
 
 
+
 You can add as many cout objects as you want. However, note that it does not insert a new line at the end of the output.
+
 You can also use cout() to print numbers.
+
 However, unlike text, we don't put numbers inside double quotes.
 
+
 **EXAMPLE:**
+
 #include <iostream>
+
 using namespace std;
+
 int main() {
+
   cout << 3;
+  
   return 0;
+  
 }
+
 RESULT : 3
+
 
 You can also perform mathematical calculations
 
+
 **EXAMPLE :**
+
 cout << 3*4;
+
 RESULT: 12
+
 
 ##To insert a new line in your output, you can use the \n character
 
+
 **EXAMPLE:**
+
 cout << "hello"<<"\n";
+
 cout << "i am peter";
+
 RESULT :
+
 hello
+
 i am peter
 
+
 Comments can be used to explain C++ code, and to make it more readable. It can also be used to prevent execution when testing alternative code. Comments can be singled-lined or multi-lined.
+
 Single-line comments start with two forward slashes (//).
+
 Any text between // and the end of the line is ignored by the compiler (will not be executed).
 
+
 **EXAMPLE:**
+
 //this is a comment 
+
 cout << "hello";
+
 RESULT : hello (here comment is not read by compiler .)
 
+
 ## Multi-line comments start with /* and ends with */.
+
 Any text between /* and */ will be ignored by the compiler
+
 these are useful to write comments which are bigger than ususal.
 
 
+
 Variables are containers for storing data values.
+
 In C++, there are different types of variables (defined with different keywords),
 
+
 **for example:**
+
 int - stores integers (whole numbers), without decimals, such as 123 or -123
+
 double - stores floating point numbers, with decimals, such as 19.99 or -19.99
+
 char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes
+
 string - stores text, such as "Hello World". String values are surrounded by double quotes
+
 bool - stores values with two states: true or false
 
+
 to declare a variable we use:
+
 variable variableName = value;
+
 
 **EXAMPLE : int x=5; //it stores value of x as 5**
 
+
 we can also change value of the variable by writing:
+
 variable name=value;
+
 
 **EXAMPLE**:int x=5;   x=10; //this changes value of x from 5 to 10
 
+
 The cout object is used together with the << operator to display variables.
+
 To combine both text and a variable, separate them with the << operator:
 
-**Example**
-int myAge = 35;
-cout << "I am " << myAge << " years old."; // this results in : I am 35 years old.
-To declare more than one variable of the same type, use a comma-separated list:
 
 **Example**
+
+int myAge = 35;
+
+cout << "I am " << myAge << " years old."; // this results in : I am 35 years old.
+
+To declare more than one variable of the same type, use a comma-separated list:
+
+
+**Example**
+
 int x = 5, y = 6, z = 50;
+
 cout << x + y + z; 
+
 RESULT : 61
+
 
 ##You can also assign the same value to multiple variables in one line:
 
+
 **Example**
+
 int x, y, z;
+
 x = y = z = 50;
+
 cout << x + y + z;
+
 RESULT : 150
 
+
 ## All C++ variables must be identified with unique names.
+
 These unique names are called identifiers.
 
+
 ## Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).
+
 ## The general rules for naming variables are:
+
 Names can contain letters, digits and underscores
+
 Names must begin with a letter or an underscore (_)
+
 Names are case-sensitive (myVar and myvar are different variables)
+
 Names cannot contain whitespaces or special characters like !, #, %, etc.
+
 Reserved words (like C++ keywords, such as int) cannot be used as names
+
 
 ## When you do not want others (or yourself) to change existing variable values, use the const keyword (this will declare the variable as "constant", which means unchangeable and read-only):
 
+
 **EXAMPLE:**
+
 const int minutesPerHour = 60;
 
 
 
+
 ## You have already learned that cout is used to output (print) values. Now we will use cin to get user input.
+
 cin is a predefined variable that reads data from the keyboard with the extraction operator (>>).
+
 In the following example, the user can input a number, which is stored in the variable x. Then we print the value of x:
+
 **Example**
+
 int x; 
+
 cout << "Type a number: "; // Type a number and press enter
+
 cin >> x; // Get user input from the keyboard
+
 cout << "Your number is: " << x; // Display the input value
 
 
+
 ## The auto keyword automatically detects the type of a variable based on the value you assign to it.
+
 It helps you write cleaner code and avoid repeating types, especially for long or complex types.
+
 For example: Instead of writing int x = 5;, you can write:
+
 **Example**
+
 auto x = 5; // x is automatically treated as int
 
 
+
 ## Here's a real-life example of using different data types, to calculate and output the total cost of a number of items:
+
 **Example**
+
 // Create variables of different data types
+
 int items = 50;
+
 double cost_per_item = 9.99;
+
 double total_cost = items * cost_per_item;
+
 char currency = '$';
+
 // Print variables
+
 cout << "Number of items: " << items << "\n";
+
 cout << "Cost per item: " << cost_per_item << currency << "\n";
+
 cout << "Total cost = " << total_cost << currency << "\n";
+
 
 
 ## Operators are used to perform operations on variables and values.
 
+
 ## C++ divides the operators into the following groups:
+
 Arithmetic operators
+
 Assignment operators
+
 Comparison operators
+
 Logical operators
+
 Bitwise operators
 
+
 ## Arithmetic operators are used to perform common mathematical operations.
+
 **Example**
-+	Addition	Adds together two values	x + y	
--	Subtraction	Subtracts one value from another	x - y	
-*	Multiplication	Multiplies two values	x * y	
-/	Division	Divides one value by another	x / y	
+
++	Addition	Adds together two values	x + y
++	
+-	Subtraction	Subtracts one value from another	x - y
+-	
+*	Multiplication	Multiplies two values	x * y
+*	
+/	Division	Divides one value by another	x / y
+
 %	Modulus	Returns the division remainder	x % y	
+
 ++	Increment	Increases the value of a variable by 1	++x	
+
 --	Decrement	Decreases the value of a variable by 1	--x
 
+
 **EXAMPLE:**
+
 int x = 10;
+
 int y = 3;
+
 cout << (x + y) << "\n"; // 13
+
 cout << (x - y) << "\n"; // 7
+
 cout << (x * y) << "\n"; // 30
+
 cout << (x / y) << "\n"; // 3 (integer division)
+
 cout << (x % y) << "\n"; // 1
+
 int z = 5;
+
 ++z;
+
 cout << z << "\n"; // 6
+
 --z;
+
 cout << z << "\n"; // 5
+
 
 ## A list of all assignment operators:
 
+
 =	,x = 5,	x = 5	
+
 +=,	x += 3,	x = x + 3	
+
 -=,	x -= 3,	x = x - 3	
+
 *=,	x *= 3,	x = x * 3	
+
 /=,	x /= 3,	x = x / 3	
+
 %=,	x %= 3,	x = x % 3	
+
 &=,	x &= 3,	x = x & 3	
+
 |=,	x |= 3,	x = x | 3	
+
 ^=,	x ^= 3,	x = x ^ 3	
->>=,	x >>= 3,	x = x >> 3	
+
+>>=,	x >>= 3,	x = x >> 3
+>>
 <<=	,x <<= 3,	x = x << 3
 
+
 ## Comparison operators are used to compare two values (or variables). This is important in programming, because it helps us to find answers and make decisions.
+
 **Example**
+
 int x = 5;
+
 int y = 3;
+
 cout << (x > y); // returns 1 (true) because 5 is greater than 3
 
+
 ## COMPARISION OPERATORS
+
 ==	,Equal to		
+
 !=,	Not equal		
->	,Greater than	
+
+>	,Greater than
+>
 <	,Less than	
->=,	Greater than or equal to	
+
+>=,	Greater than or equal to
+>
 <=,	Less than or equal to
 
+
 ## As with comparison operators, you can also test for true (1) or false (0) values with logical operators.
+
 SOME OPERATORS WITH NAME AND DISCRIPTIONA ARE FOLLOWING:-
+
 && -	Logical and,	Returns true if both statements are true
+
 || -	Logical or	,Returns true if one of the statements is true	
+
 !-	Logical not,	Reverse the result, returns false if the result is true
+
 
 ## When a calculation contains more than one operator, C++ follows order of operations rules to decide which part to calculate first.
 
+
 ## Here are some common operators in C++, from highest to lowest priority:
+
 () - Parentheses
+
 *, /, % - Multiplication, Division, Modulus
+
 +, - - Addition, Subtraction
+
 >, <, >=, <= - Comparison
+>
 ==, != - Equality
+
 && - Logical AND
+
 || - Logical OR
+
 = - Assignment
 
 
+
 ## The + operator can be used between strings to add them together to make a new string. This is called concatenation:
+
 Example
+
 string firstName = "John ";
+
 string lastName = "Doe";
+
 string fullName = firstName + lastName;
+
 cout << fullName;
 
 
+
 ## To get the length of a string, use the length() function:
+
 Example
+
 string txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
 cout << "The length of the txt string is: " << txt.length();
 
 
+
 ## You can access the characters in a string by referring to its index number inside square brackets [].
+
 This example prints the first character in myString:
+
 **Example**
+
 string myString = "Hello";
+
 cout << myString[0];
+
 // Outputs H
 
 
+
 ## Because strings must be written within quotes, C++ will misunderstand this string, and generate an error
+
 The solution to avoid this problem, is to use the backslash escape character.
+
 The backslash (\) escape character turns special characters into string characters
+
 \' 	-  '	Single quote
+
 \" 	-   "	Double quote
+
 \\  -	 \ 	Backslash
 
 
+
 ## It is possible to use the extraction operator >> on cin to store a string entered by a user:
+
 **Example**
+
 string firstName;
+
 cout << "Type your first name: ";
+
 cin >> firstName; // get user input from the keyboard
+
 cout << "Your name is: " << firstName;
+
 // Type your first name: John
+
 // Your name is: John
 
 
+
 ## If you prefer to print true and false as words instead of 1 and 0, you can use the boolalpha manipulator:
-**Example**
-bool isCodingFun = true;
-bool isFishTasty = false;
-cout << boolalpha; // enable printing "true"/"false"
-cout << isCodingFun << "\n";   // Outputs true
-cout << isFishTasty << "\n";  // Outputs false
 
 **Example**
+
+bool isCodingFun = true;
+
+bool isFishTasty = false;
+
+cout << boolalpha; // enable printing "true"/"false"
+
+cout << isCodingFun << "\n";   // Outputs true
+
+cout << isFishTasty << "\n";  // Outputs false
+
+
+**Example**
+
 Output "Old enough to vote!" if myAge is greater than or equal to 18. Otherwise output "Not old enough to vote.":
+
 int myAge = 25;
+
 int votingAge = 18;
 if (myAge >= votingAge) {
   cout << "Old enough to vote!";
