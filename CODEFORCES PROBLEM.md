@@ -1,5 +1,5 @@
 # THIS WILL CONTAIN PROBELEMS TO CODEFRCES PROBLEM WITH LINKS .
-https://codeforces.com/group/MWSDmqGsZm/contest/219158
+```https://codeforces.com/group/MWSDmqGsZm/contest/219158```
 ## ABOVE IS THE LINK TO COFEFORCE FOR PRACTICE
 
 
@@ -17,7 +17,7 @@ Print "Hello, " without quotes, then print name.
 
 ## SOLUTION:
 
-#include <iostream>
+```#include <iostream>
 
 #include <string> // Added this to fix the compilation error
 
@@ -33,7 +33,7 @@ int main(){
     
     return 0;
     
-}
+}```
 
 
 
@@ -90,7 +90,7 @@ Print each element on a new line in the same order it was received as input.
 
 ## SOLUTION:
 
-#include <iostream>
+```#include <iostream>
 
 using namespace std;
 
@@ -124,7 +124,7 @@ int main() {
     
     return 0;
     
-}
+}```
 
 
 
@@ -149,7 +149,7 @@ Print 3 lines that contain the following in the same order:
 
 ## SOLUTION:
 
-#include <iostream>
+```#include <iostream>
 
 using namespace std;
 
@@ -173,7 +173,7 @@ int main() {
     
     return 0;
     
-}
+}```
 
 
 
@@ -194,7 +194,7 @@ Print "Difference  =  " without quotes followed by the equation result.
 
 ## SOLUTION:
 
-#include <iostream>
+```#include <iostream>
 
 using namespace std;
 
@@ -220,5 +220,5 @@ int main() {
     
     return 0;
     
-    }
+    }```
 
