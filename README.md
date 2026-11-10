@@ -74,33 +74,33 @@
 
 ## WHY USE C++
 
-C++ is one of the world's most popular programming languages.
+1. C++ is one of the world's most popular programming languages.
 
-C++ can be found in today's operating systems, Graphical User Interfaces, and embedded systems.
+2. C++ can be found in today's operating systems, Graphical User Interfaces, and embedded systems.
 
-C++ is an object-oriented programming language which gives a clear structure to programs and allows code to be reused, lowering development costs.
+3. C++ is an object-oriented programming language which gives a clear structure to programs and allows code to be reused, lowering development costs.
 
-C++ is portable and can be used to develop applications that can be adapted to multiple platforms.
+4. C++ is portable and can be used to develop applications that can be adapted to multiple platforms.
 
-C++ is fun and easy to learn!
+5. C++ is fun and easy to learn!
 
-As C++ is close to C, C# and Java, it makes it easy for programmers to switch to C++ or vice versa.
+6. As C++ is close to C, C# and Java, it makes it easy for programmers to switch to C++ or vice versa.
 
 
 
 ***syntax**
 
-#include <iostream> // it is a header file library that lets u input and output objects
+1. #include <iostream> // it is a header file library that lets u input and output objects
 
-using namespace std; //means that we can use names for objects and variables 
+2. using namespace std; //means that we can use names for objects and variables 
 
-int main(){ //this is called function and any code inside the curly bracket will be executed
+3. int main(){ //this is called function and any code inside the curly bracket will be executed
 
-cout << "hello"; // this is an object which lets u output things
+4. cout << "hello"; // this is an object which lets u output things
 
-return 0; // ends the main function
+5. return 0; // ends the main function
 
-} //curly bracket to actually end the function
+6. } //curly bracket to actually end the function
 
 
 **EXAMPLE**
@@ -121,7 +121,7 @@ RESULT : Hello World!
 
 
 
-##STD :: // it can be used in place of using namespace std; like std::cout<<"hello world";
+## STD :: // it can be used in place of using namespace std; like std::cout<<"hello world";
 
 
 **EXAMPLE-**
@@ -140,13 +140,13 @@ RESULT : Hello World!
 
 
 
-A computer program is a list of "instructions" to be "executed" by a computer.
+- A computer program is a list of "instructions" to be "executed" by a computer.
 
-In a programming language, these programming instructions are called statements.
+- In a programming language, these programming instructions are called statements.
 
-It is important to end the statement with semicolon
+- It is important to end the statement with semicolon
 
-Most c++ programs contains multiple statements and they are executed one by one!
+- Most c++ programs contains multiple statements and they are executed one by one!
 
 
 **EXAMPLE**
@@ -161,11 +161,11 @@ RESULT : Hello World!Have a good day!
 
 
 
-You can add as many cout objects as you want. However, note that it does not insert a new line at the end of the output.
+- You can add as many cout objects as you want. However, note that it does not insert a new line at the end of the output.
 
-You can also use cout() to print numbers.
+- You can also use cout() to print numbers.
 
-However, unlike text, we don't put numbers inside double quotes.
+- However, unlike text, we don't put numbers inside double quotes.
 
 
 **EXAMPLE:**
@@ -185,7 +185,7 @@ int main() {
 RESULT : 3
 
 
-You can also perform mathematical calculations
+## You can also perform mathematical calculations
 
 
 **EXAMPLE :**
@@ -195,7 +195,7 @@ cout << 3*4;
 RESULT: 12
 
 
-##To insert a new line in your output, you can use the \n character
+## To insert a new line in your output, you can use the \n character
 
 
 **EXAMPLE:**
@@ -211,11 +211,11 @@ hello
 i am peter
 
 
-Comments can be used to explain C++ code, and to make it more readable. It can also be used to prevent execution when testing alternative code. Comments can be singled-lined or multi-lined.
+## Comments can be used to explain C++ code, and to make it more readable. It can also be used to prevent execution when testing alternative code. Comments can be singled-lined or multi-lined.
 
-Single-line comments start with two forward slashes (//).
+- Single-line comments start with two forward slashes (//).
 
-Any text between // and the end of the line is ignored by the compiler (will not be executed).
+- Any text between // and the end of the line is ignored by the compiler (will not be executed).
 
 
 **EXAMPLE:**
@@ -229,28 +229,25 @@ RESULT : hello (here comment is not read by compiler .)
 
 ## Multi-line comments start with /* and ends with */.
 
-Any text between /* and */ will be ignored by the compiler
+- Any text between /* and */ will be ignored by the compiler
 
-these are useful to write comments which are bigger than ususal.
+- these are useful to write comments which are bigger than ususal.
 
 
 
-Variables are containers for storing data values.
+## Variables are containers for storing data values.
 
-In C++, there are different types of variables (defined with different keywords),
+- In C++, there are different types of variables (defined with different keywords),
 
 
 **for example:**
-
-int - stores integers (whole numbers), without decimals, such as 123 or -123
-
-double - stores floating point numbers, with decimals, such as 19.99 or -19.99
-
-char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes
-
-string - stores text, such as "Hello World". String values are surrounded by double quotes
-
-bool - stores values with two states: true or false
+|VARIABLE NAME|VALUE STORED|EXAMPLE|
+|---|---|---|
+|int| stores integers (whole numbers), without decimals| such as 123 or -123|
+|double | stores floating point numbers, with decimals| such as 19.99 or -19.99|
+|char |stores single characters, such as 'a' or 'B'.| A|
+|string | stores text| such as "Hello World".| 
+|bool |stores values with two states|: true or false|
 
 
 to declare a variable we use:
