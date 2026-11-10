@@ -474,28 +474,27 @@ cout << (x > y); // returns 1 (true) because 5 is greater than 3
 
 ## COMPARISION OPERATORS
 
-==	,Equal to		
+==	: Equal to		
 
-!=,	Not equal		
+!= : 	Not equal		
 
->	,Greater than
->
-<	,Less than	
+>	: Greater than
 
->=,	Greater than or equal to
->
-<=,	Less than or equal to
+<	: Less than	
+
+>= : Greater than or equal to
+
+<= : Less than or equal to
 
 
 ## As with comparison operators, you can also test for true (1) or false (0) values with logical operators.
 
-SOME OPERATORS WITH NAME AND DISCRIPTIONA ARE FOLLOWING:-
-
-&& -	Logical and,	Returns true if both statements are true
-
-|| -	Logical or	,Returns true if one of the statements is true	
-
-!-	Logical not,	Reverse the result, returns false if the result is true
+**SOME OPERATORS WITH NAME AND DISCRIPTIONA ARE FOLLOWING:-**
+|SYMBOL|NAME|MEANING|
+|---|---|---|
+|&& |	Logical and| Returns true if both statements are true|
+||| | Logical or	|Returns true if one of the statements is true	|
+|!|	Logical not|	Reverse the result, returns false if the result is true|
 
 
 ## When a calculation contains more than one operator, C++ follows order of operations rules to decide which part to calculate first.
@@ -503,27 +502,27 @@ SOME OPERATORS WITH NAME AND DISCRIPTIONA ARE FOLLOWING:-
 
 ## Here are some common operators in C++, from highest to lowest priority:
 
-() - Parentheses
+1. () - Parentheses
 
-*, /, % - Multiplication, Division, Modulus
+2. *, /, % - Multiplication, Division, Modulus
 
-+, - - Addition, Subtraction
+3. +, - - Addition, Subtraction
 
->, <, >=, <= - Comparison
->
-==, != - Equality
+4. >, <, >=, <= - Comparison
 
-&& - Logical AND
+5. ==, != - Equality
 
-|| - Logical OR
+6. && - Logical AND
 
-= - Assignment
+7. || - Logical OR
+
+8. = - Assignment
 
 
 
 ## The + operator can be used between strings to add them together to make a new string. This is called concatenation:
 
-Example
+**Example**
 
 string firstName = "John ";
 
@@ -537,7 +536,7 @@ cout << fullName;
 
 ## To get the length of a string, use the length() function:
 
-Example
+**Example**
 
 string txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
@@ -561,9 +560,9 @@ cout << myString[0];
 
 ## Because strings must be written within quotes, C++ will misunderstand this string, and generate an error
 
-The solution to avoid this problem, is to use the backslash escape character.
+- The solution to avoid this problem, is to use the backslash escape character.
 
-The backslash (\) escape character turns special characters into string characters
+- The backslash (\) escape character turns special characters into string characters
 
 \' 	-  '	Single quote
 
@@ -629,13 +628,13 @@ if (myAge >= votingAge) {
 
 ## C++ has the following conditional statements:
 
-Use if to specify a block of code to be executed, if a condition is true
+- Use if to specify a block of code to be executed, if a condition is true
 
-Use else to specify a block of code to be executed, if the same condition is false
+- Use else to specify a block of code to be executed, if the same condition is false
 
-Use else if to specify a new condition to test, if the first condition is false
+- Use else if to specify a new condition to test, if the first condition is false
 
-Use switch to specify many alternative blocks of code to be executed
+- Use switch to specify many alternative blocks of code to be executed
 
 
 ## Use the if statement to specify a block of C++ code to be executed if a condition is true.
@@ -731,7 +730,7 @@ y is also greater than 20
 
 This example shows how you can use if..else to "open a door" if the user enters the correct code:
 
-Example
+**Example**
 
 int doorCode = 1337;
 
@@ -773,15 +772,15 @@ switch(expression) {
 
 ## This is how it works:
 
-The switch expression is evaluated once
+- The switch expression is evaluated once
 
-The value of the expression is compared with the values of each case
+- The value of the expression is compared with the values of each case
 
-If there is a match, the associated block of code is executed
+- If there is a match, the associated block of code is executed
 
-The break and default keywords are optional, and will be described later in this chapter
+- The break and default keywords are optional, and will be described later in this chapter
 
-
+**EXAMPLE**
 
 int day = 4
 
@@ -818,15 +817,15 @@ break;
 
 ## When C++ reaches a break keyword, it breaks out of the switch block.
 
-This will stop the execution of more code and case testing inside the block.
+- This will stop the execution of more code and case testing inside the block.
 
 
 
 ## Loops can execute a block of code as long as a specified condition is reached.
 
-Loops are handy because they save time, reduce errors, and they make code more readable.
+- Loops are handy because they save time, reduce errors, and they make code more readable.
 
-The while loop loops through a block of code as long as a specified condition is true:
+- The while loop loops through a block of code as long as a specified condition is true:
 
 **Syntax**
 
@@ -895,9 +894,9 @@ for (int i = 1; i <= 2; ++i) {
 
 ## you have already seen the break statement used in an earlier chapter of this tutorial. It was used to "jump out" of a switch statement.
 
-The break statement can also be used to jump out of a loop.
+- The break statement can also be used to jump out of a loop.
 
-This example jumps out of the loop when i is equal to 4:
+- This example jumps out of the loop when i is equal to 4:
 
 **Example**
 
@@ -915,9 +914,9 @@ for (int i = 0; i < 10; i++) {
 
 ## C++ Continue
 
-The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
+- The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
 
-This example skips the value of 4:
+- This example skips the value of 4:
 
 **Example**
 
@@ -934,15 +933,15 @@ for (int i = 0; i < 10; i++) {
 
 ## arrays
 
-Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.
+- Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.
 
-To declare an array, define the variable type, specify the name of the array followed by square brackets and specify the 
+- To declare an array, define the variable type, specify the name of the array followed by square brackets and specify the 
 
-number of elements it should store:
+- number of elements it should store:
 
 **string cars[4];**
 
-We have now declared a variable that holds an array of four strings. To insert values to it, we can use an array literal - place the values in a comma-separated list, inside curly braces:
+- We have now declared a variable that holds an array of four strings. To insert values to it, we can use an array literal - place the values in a comma-separated list, inside curly braces:
 
 **string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"};**
 
@@ -959,11 +958,11 @@ cout << sizeof(myNumbers);
 
 ## Why did the result show 20 instead of 5, when the array contains 5 elements?
 
-It is because the sizeof() operator returns the size of a type in bytes.
+- It is because the sizeof() operator returns the size of a type in bytes.
 
-You learned from the Data Types chapter that an int type is usually 4 bytes, so from the example above, 4 x 5 (4 bytes x 5 elements) = 20 bytes.
+- You learned from the Data Types chapter that an int type is usually 4 bytes, so from the example above, 4 x 5 (4 bytes x 5 elements) = 20 bytes.
 
-To find out how many elements an array has, you have to divide the size of the array by the size of the first element in the array:
+- To find out how many elements an array has, you have to divide the size of the array by the size of the first element in the array:
 
 **Example**
 
@@ -976,9 +975,9 @@ cout << getArrayLength;
 
 ## Multi-Dimensional Arrays
 
-A multi-dimensional array is an array of arrays.
+- A multi-dimensional array is an array of arrays.
 
-To declare a multi-dimensional array, define the variable type, specify the name of the array followed by square brackets which specify how many elements the main array has, followed by another set of square brackets which indicates how many elements the sub-arrays have:
+- To declare a multi-dimensional array, define the variable type, specify the name of the array followed by square brackets which specify how many elements the main array has, followed by another set of square brackets which indicates how many elements the sub-arrays have:
 
 **string letters[2][4];**
 
@@ -994,7 +993,7 @@ string letters[2][4] = {
 
 ## Each set of square brackets in an array declaration adds another dimension to an array. An array like the one above is said to have two dimensions.
 
-Arrays can have any number of dimensions. The more dimensions an array has, the more complex the code becomes. The following array has three dimensions:
+- Arrays can have any number of dimensions. The more dimensions an array has, the more complex the code becomes. The following array has three dimensions:
 
 string letters[2][2][2] = {
 
@@ -1020,11 +1019,11 @@ string letters[2][2][2] = {
 
 ## STRUCTURES
 
-Structures (also called structs) are a way to group several related variables into one place.
+- Structures (also called structs) are a way to group several related variables into one place.
 
-Each variable in the structure is known as a member of the structure.
+- Each variable in the structure is known as a member of the structure.
 
-Unlike an array, a structure can contain many different data types: int, string, bool, etc.
+- Unlike an array, a structure can contain many different data types: int, string, bool, etc.
 
 **EXAMPLE**
 
@@ -1039,7 +1038,7 @@ struct {             // Structure declaration
 
 ## ACCESSS STRUCTURE
 
-To access members of a structure, use the dot syntax (.):
+- To access members of a structure, use the dot syntax (.):
 
 **Example**
 
@@ -1107,7 +1106,7 @@ cout << myCar2.brand << " " << myCar2.model << " " << myCar2.year << "\n";
 
 ##  ENUMS
 
-To create an enum, use the enum keyword, followed by the name of the enum, and separate the enum items with a comma:-
+- To create an enum, use the enum keyword, followed by the name of the enum, and separate the enum items with a comma:-
 
 enum Level {
 
@@ -1122,7 +1121,7 @@ enum Level {
 
 ## To access the enum, you must create a variable of it.
 
-Inside the main() method, specify the enum keyword, followed by the name of the enum (Level) and then the name of the enum variable (myVar in this example):
+- Inside the main() method, specify the enum keyword, followed by the name of the enum (Level) and then the name of the enum variable (myVar in this example):
 
 enum Level myVar;
 
@@ -1153,11 +1152,11 @@ cout << meal << "\n"; // Outputs Burger
 
 ## memory address
 
-In the example from the previous page, the & operator was used to create a reference variable. But it can also be used to get the memory address of a variable; which is the location of where the variable is stored on the computer.
+- In the example from the previous page, the & operator was used to create a reference variable. But it can also be used to get the memory address of a variable; which is the location of where the variable is stored on the computer.
 
-When a variable is created in C++, a memory address is assigned to the variable. And when we assign a value to the variable, it is stored in this memory address.
+- When a variable is created in C++, a memory address is assigned to the variable. And when we assign a value to the variable, it is stored in this memory address.
 
-To access it, use the & operator, and the result will represent where the variable is stored:
+- To access it, use the & operator, and the result will represent where the variable is stored:
 
 **example**
 
@@ -1173,9 +1172,9 @@ HERE THIS IS ADDRESS WHEE I WAS STORED
 
 ## POINTERS
 
-A pointer however, is a variable that stores the memory address as its value.
+- A pointer however, is a variable that stores the memory address as its value.
 
-A pointer variable points to a data type (like int or string) of the same type, and is created with the * operator. The address of the variable you're working with is assigned to the pointer
+- A pointer variable points to a data type (like int or string) of the same type, and is created with the * operator. The address of the variable you're working with is assigned to the pointer
 
 **example**
 
@@ -1197,11 +1196,11 @@ cout << ptr << "\n";
 
 **example explained**
 
-Create a pointer variable with the name ptr, that points to a string variable, by using the asterisk sign * (string* ptr). Note that the type of the pointer has to match the type of the variable you're working with.
+- Create a pointer variable with the name ptr, that points to a string variable, by using the asterisk sign * (string* ptr). Note that the type of the pointer has to match the type of the variable you're working with.
 
-Use the & operator to store the memory address of the variable called food, and assign it to the pointer.
+- Use the & operator to store the memory address of the variable called food, and assign it to the pointer.
 
-Now, ptr holds the value of food's memory address.
+- Now, ptr holds the value of food's memory address.
 
 
 ## in the example from the above, we used the pointer variable to get the memory address of a variable (used together with the & reference operator). However, you can also use the pointer to get the value of the variable, by using the * operator (the dereference operator):
@@ -1257,15 +1256,15 @@ cout << food << "\n";
 
 ## memory management
 
-Memory management is the process of controlling how much memory your program uses - and how it is used. This includes creating, using, and releasing memory when it's no longer needed.
+- Memory management is the process of controlling how much memory your program uses - and how it is used. This includes creating, using, and releasing memory when it's no longer needed.
 
-When you create a variable in C++, the compiler automatically reserves space in memory for it.
+- When you create a variable in C++, the compiler automatically reserves space in memory for it.
 
 **For example:**
 
 int myNumber = 10;
 
-The line above tells the program: "I need space to store an integer." C++ handles this memory automatically, so in this case, you dont have to worry about managing memory.
+- The line above tells the program: "I need space to store an integer." C++ handles this memory automatically, so in this case, you dont have to worry about managing memory.
 
 ## You can check how much memory a variable type uses with the sizeof operator:
 
@@ -1298,15 +1297,15 @@ return 0;}
 
 ## Do You Have to Manage Memory Yourself?
 
-Sometimes yes - and sometimes no.
+- Sometimes yes - and sometimes no.
 
-For normal variables (like int x = 10;), C++ takes care of the memory for you.
+- For normal variables (like int x = 10;), C++ takes care of the memory for you.
 
-But when you want to create memory manually while the program is running (for example: based on user input), you need to manage it yourself and clean it up when you're done.
+- But when you want to create memory manually while the program is running (for example: based on user input), you need to manage it yourself and clean it up when you're done.
 
-If your program uses too much memory, or forgets to clean up memory it no longer needs, it can lead to slow performance or even crashes.
+- If your program uses too much memory, or forgets to clean up memory it no longer needs, it can lead to slow performance or even crashes.
 
-That's why understanding memory is important. It gives you more control and helps avoid common bugs.
+- That's why understanding memory is important. It gives you more control and helps avoid common bugs.
 
 
 ## The new keyword lets you manage memory yourself.
@@ -1403,18 +1402,17 @@ int main() {
 
 ## When to Use new
 
-In most cases, you don't need to use new. C++ will automatically handle memory for normal variables like:
+- In most cases, you don't need to use new. C++ will automatically handle memory for normal variables like:
 
 **int age = 35;
-
 string name = "John";**
 
-But sometimes, you have to manage memory yourself - especially when:
+- But sometimes, you have to manage memory yourself - especially when:
 
-You don't know how much memory you'll need in advance (like how many guests or scores)
+- You don't know how much memory you'll need in advance (like how many guests or scores)
 
-You want to create memory while the program is running, based on user input
+- You want to create memory while the program is running, based on user input
 
-You need to store large or flexible amounts of data
+- You need to store large or flexible amounts of data
 
-You want full manual control over memory (e.g., performance-critical code)
+- You want full manual control over memory (e.g., performance-critical code)
