@@ -174,3 +174,31 @@ int main() {
 }
 
 
+## PROBLEM 5:DIGITS SUMMATION
+![](https://github.com/medhanshmithukhatri-star/CODING-/blob/2633bf6dce5a6a7ca9f99d7047f40abfb6dd515f/PHOTO/Screenshot%202026-11-10%20114728.png)
+
+
+## SOLUTION :
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+
+    long long n,m;
+    
+    cin >> n;
+    
+    cin >> m;
+    
+    long long x=n%10;
+    
+    long long y=m%10;
+    
+    cout << x+y;
+    
+    return 0;
+    
+}
+
