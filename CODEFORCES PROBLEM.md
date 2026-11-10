@@ -72,23 +72,7 @@ int main() {
 
 
 ### PROBLEM 3:SIMPLE CALCULATOR
-
-Given two numbers X and Y. Print the summation and multiplication and subtraction of these 2 numbers.
-
-Input
-
-Only one line containing two separated numbers X, Y (1  ≤  X, Y  ≤  105).
-
-Output
-
-Print 3 lines that contain the following in the same order:
-
-"X + Y = summation result" without quotes.
-
-"X * Y = multiplication result" without quotes.
-
-"X - Y = subtraction result" without quotes.
-
+![](https://github.com/medhanshmithukhatri-star/CODING-/blob/4c1c0ef0e7ab64fec5e93a8c9f48a47bc67c717f/PHOTO/Screenshot%202026-11-10%20111323.png)
 
 ## SOLUTION:
 
