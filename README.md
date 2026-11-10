@@ -3,7 +3,7 @@
 ## THINGS WHICH WILL BE COVERED
 
 
--[x]C++ Syntax,
+- [x]C++ Syntax,
 
 C++ Output,
 
