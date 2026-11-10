@@ -1,160 +1,293 @@
-PROBLEM 1  :print Hello,C++
-SOLUTION 1 :
+## PROBLEM 1  :print Hello,C++
+
+## SOLUTION 1 :
+
 #include <iostream>
+
 using namespace std;
+
 int main() {
+
   cout << "Hello,C++";
+  
   return 0;
+  
 }
-RESULT :Hello,C++
+
+## RESULT :Hello,C++
 
 
-PROBLEM 2: print your name and age in two different lines
-SOLUTION 2:
+
+## PROBLEM 2: print your name and age in two different lines
+
+## SOLUTION 2:
+
 #include <iostream>
+
 using namespace std;
 
 int main() {
+
  cout << "Peter"<< "\n"; 
+ 
  cout << "55";
+ 
   return 0;
+  
 }
-RESULT: 
+
+##RESULT: 
+
 Peter
+
 55
 
 
 
-PROBLEM 3 : specify length and breadth of a rectangle and find its area.
-SOLUTION 3 : 
+
+## PROBLEM 3 : specify length and breadth of a rectangle and find its area.
+
+## SOLUTION 3 :
+
 #include <iostream>
+
 using namespace std;
+
 int main(){
+
 int length = 10;
+
 int breadth = 20;
+
 area = length*breadth;
+
 cout << area;
+
 return 0;
+
 }
-RESULT: 200
+
+## RESULT: 200
 
 
-PROBLEM 4: create a calculator for addition.
-SOLUTION 4:
+
+## PROBLEM 4: create a calculator for addition.
+
+## SOLUTION 4:
+
 int x, y;
+
 int sum;
+
 cout << "Type a number: ";
+
 cin >> x;
+
 cout << "Type another number: ";
+
 cin >> y;
+
 sum = x + y;
+
 cout << "Sum is: " << sum;
 
 
-PROBLEM 5:MAKE A REPORT CARD OF A STUDENT 
-SOLUTION 5: (th results are based on person to person)
+
+## PROBLEM 5:MAKE A REPORT CARD OF A STUDENT 
+
+## SOLUTION 5: (th results are based on person to person)
+
 include <iostream>
+
 using namespace std;
+
 int main() {
+
     // 1. Declare an int named studentID and assign it a value
+    
     int studentID = 101;
+    
     // 2. Declare a float (or double) named score and assign it a decimal value
+    
     float score = 95.5f;
+    
     // 3. Declare a char named grade and assign it a single character
+    
     char grade = 'A';
+    
     // 4. Print all three values using cout
+    
     cout << "Student ID: " << studentID << "\n";
+    
     cout << "Score: " << score << "\n";
+    
     cout << "Grade: " << grade << "\n";
+    
     return 0;
+    
 }
 
 
-PROBLEM 6: DECLARE TWO INT AS RATE OF ITEM AND TAX THEN PRINT TOTAL SUM PAYED BY THE CUSTOMER .(PUT THE RATE AS USER INPUT)
-SOLUTION 6:
+
+## PROBLEM 6: DECLARE TWO INT AS RATE OF ITEM AND TAX THEN PRINT TOTAL SUM PAYED BY THE CUSTOMER .(PUT THE RATE AS USER INPUT)
+
+## SOLUTION 6:
+
 #include <iostream>
+
 using namespace std;
+
 int main() {
+
     int rate;
+    
     int tax=10;
+    
     cin >> rate;
+    
     int total = rate + tax;
+    
     cout << total;
+    
     return 0;
+    
 }
 
 
-PROBLEM 7:CHECK THE MINIMUM AGE OF CANDIDATE ENTERED BY USER .
-SOLUTION 7:
+
+## PROBLEM 7:CHECK THE MINIMUM AGE OF CANDIDATE ENTERED BY USER .
+
+## SOLUTION 7:
+
 int myAge;
+
 int votingAge = 18;
+
 cin >> myage;
+
 if (myAge >= votingAge) {
+
   cout << "Old enough to vote!";
+  
 } else {
+
   cout << "Not old enough to vote.";
+  
 }
 
 
-PROBLEM 8:MAKE A CHOICE BETWEEN COFFEE OR TEA WITH USING OF SWITCH.
-SOLUTION 8:
+
+## PROBLEM 8:MAKE A CHOICE BETWEEN COFFEE OR TEA WITH USING OF SWITCH.
+
+## SOLUTION 8:
+
 #include <iostream>
+
 using namespace std;
 
 int main() {
+
     int choice;
+    
     cin >> choice;
+    
     switch (choice) {
+
         case 1:
+        
             cout << "You chose Coffee";
+            
             break;
+            
         case 2:
+        
             cout << "You chose Tea";
+            
             break;
+            
         default:
+        
             cout << "Invalid choice";
+            
             break;
+            
     }
+    
     return 0;
+    
 }
 
 
-PROBLEM 9:COUNT NO. FROM 1 TO 5 USING WHILE LOOP.
-SOLUTION 9:
+
+## PROBLEM 9:COUNT NO. FROM 1 TO 5 USING WHILE LOOP.
+
+## SOLUTION 9:
+
 #include <iostream>
+
 using namespace std;
+
 int main(){
+
 int x=1;
+
 while (x<6){
+
 cout << x++;
+
 }
+
 return 0;
+
 }
 
 
-PROBLEM 10:MAKE A TABLE OF 10 USING FOR LOOP.
-SOLUTION 10:
+
+## PROBLEM 10:MAKE A TABLE OF 10 USING FOR LOOP.
+
+## SOLUTION 10:
+
 #include <iostream>
+
 using namespace std;
+
 int main(){
+
 int i = 10;
+
 for (int j = 1;j<11;j++){
+
 cout << i*j << "\n";
-}
-return 0;
+
 }
 
-PROBLEM 11:MAKE A INT ARRAY HAVING 5 NUMBERS.SET FIRST ELEMENT TO 10 AND LAST ELEMENT TO 50,PRINT THEM
-SOLUTION 11:
-#include <iostream>
-using namespace std;
-int main() {
-    int arr[5] = {10, 0, 0, 0, 50};
-    for (int i = 0; i < 5; i++) {
-        cout << arr[i] << " ";
-    }
-    return 0;
+return 0;
+
 }
+
+
+## PROBLEM 11:MAKE A INT ARRAY HAVING 5 NUMBERS.SET FIRST ELEMENT TO 10 AND LAST ELEMENT TO 50,PRINT THEM
+
+## SOLUTION 11:
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+    int arr[5] = {10, 0, 0, 0, 50};
+    
+    for (int i = 0; i < 5; i++) {
+    
+        cout << arr[i] << " ";
+        
+    }
+    
+    return 0;
+    
+}
+
 
 
 
