@@ -174,7 +174,7 @@ int main() {
 }
 
 
-## PROBLEM 5:DIGITS SUMMATION
+## PROBLEM 6:DIGITS SUMMATION
 ![](https://github.com/medhanshmithukhatri-star/CODING-/blob/2633bf6dce5a6a7ca9f99d7047f40abfb6dd515f/PHOTO/Screenshot%202026-11-10%20114728.png)
 
 
@@ -202,3 +202,26 @@ int main(){
     
 }
 
+
+## PROBLEM 7: SUMMATION FROM 1 TO N
+![](https://github.com/medhanshmithukhatri-star/CODING-/blob/9f95c47487651f8b9f0d76f8056ae1514d50f3bc/PHOTO/Screenshot%202026-11-10%20122852.png)
+
+## SOLUTION :
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+
+    long long n;
+    
+    cin >> n;
+    
+    long long y = n*(n+1)/2;
+    
+    cout << y;
+    
+    return 0;
+    
+}
