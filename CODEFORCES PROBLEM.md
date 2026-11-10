@@ -5,9 +5,6 @@ https://codeforces.com/group/MWSDmqGsZm/contest/219158
 
 # PROBLEM 1:SAY HELLO
 
-![PROBLEM 1](<img width="923" height="401" alt="Screenshot 2026-11-10 110427" src="https://github.com/user-attachments/assets/825eba76-8a04-4319-8b6e-af4e481c79a8" />
-)
-
 ## SOLUTION:
 
 #include <iostream>
