@@ -138,23 +138,9 @@ int main() {
     }
 
 
-    ### PROBLEM 5:AREA OF CIRCLE
+ ## PROBLEM 5:AREA OF CIRCLE
+   ![](https://github.com/medhanshmithukhatri-star/CODING-/blob/4298e1c8fb7a05b6800df1b418791ad4cf7d03c9/PHOTO/Screenshot%202026-11-10%20111357.png) 
     
-    Given a number R calculate the area of a circle using the following formula:
-    
-Area = π * R2.
-
-Note: consider π = 3.141592653.
-
-Input
-
-Only one line containing the number R (1  ≤  R  ≤  100).
-
-Output
-
-Print the calculated area, with 9 digits after the decimal point.
-
-
 ## SOLUTION:
 
 #include <iostream>
