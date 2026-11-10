@@ -250,25 +250,25 @@ RESULT : hello (here comment is not read by compiler .)
 |bool |stores values with two states|: true or false|
 
 
-to declare a variable we use:
+## to declare a variable we use:
 
-variable variableName = value;
+`variable variableName = value;`
 
 
 **EXAMPLE : int x=5; //it stores value of x as 5**
 
 
-we can also change value of the variable by writing:
+- we can also change value of the variable by writing:
 
-variable name=value;
+` variable name=value; `
 
 
 **EXAMPLE**:int x=5;   x=10; //this changes value of x from 5 to 10
 
 
-The cout object is used together with the << operator to display variables.
+- The cout object is used together with the << operator to display variables.
 
-To combine both text and a variable, separate them with the << operator:
+- To combine both text and a variable, separate them with the << operator:
 
 
 **Example**
@@ -277,7 +277,7 @@ int myAge = 35;
 
 cout << "I am " << myAge << " years old."; // this results in : I am 35 years old.
 
-To declare more than one variable of the same type, use a comma-separated list:
+## To declare more than one variable of the same type, use a comma-separated list:
 
 
 **Example**
@@ -289,7 +289,7 @@ cout << x + y + z;
 RESULT : 61
 
 
-##You can also assign the same value to multiple variables in one line:
+## You can also assign the same value to multiple variables in one line:
 
 
 **Example**
@@ -305,22 +305,22 @@ RESULT : 150
 
 ## All C++ variables must be identified with unique names.
 
-These unique names are called identifiers.
+- These unique names are called identifiers.
 
 
 ## Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).
 
 ## The general rules for naming variables are:
 
-Names can contain letters, digits and underscores
+1. Names can contain letters, digits and underscores
 
-Names must begin with a letter or an underscore (_)
+2. Names must begin with a letter or an underscore (_)
 
-Names are case-sensitive (myVar and myvar are different variables)
+3. Names are case-sensitive (myVar and myvar are different variables)
 
-Names cannot contain whitespaces or special characters like !, #, %, etc.
+4. Names cannot contain whitespaces or special characters like !, #, %, etc.
 
-Reserved words (like C++ keywords, such as int) cannot be used as names
+5. Reserved words (like C++ keywords, such as int) cannot be used as names
 
 
 ## When you do not want others (or yourself) to change existing variable values, use the const keyword (this will declare the variable as "constant", which means unchangeable and read-only):
