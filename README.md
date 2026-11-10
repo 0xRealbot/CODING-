@@ -328,16 +328,16 @@ RESULT : 150
 
 **EXAMPLE:**
 
-const int minutesPerHour = 60;
+`const int minutesPerHour = 60;`
 
 
 
 
 ## You have already learned that cout is used to output (print) values. Now we will use cin to get user input.
 
-cin is a predefined variable that reads data from the keyboard with the extraction operator (>>).
+- cin is a predefined variable that reads data from the keyboard with the extraction operator (>>).
 
-In the following example, the user can input a number, which is stored in the variable x. Then we print the value of x:
+- In the following example, the user can input a number, which is stored in the variable x. Then we print the value of x:
 
 **Example**
 
@@ -353,13 +353,13 @@ cout << "Your number is: " << x; // Display the input value
 
 ## The auto keyword automatically detects the type of a variable based on the value you assign to it.
 
-It helps you write cleaner code and avoid repeating types, especially for long or complex types.
+- It helps you write cleaner code and avoid repeating types, especially for long or complex types.
 
-For example: Instead of writing int x = 5;, you can write:
+- For example: Instead of writing int x = 5;, you can write:
 
 **Example**
 
-auto x = 5; // x is automatically treated as int
+`auto x = 5; // x is automatically treated as int`
 
 
 
@@ -392,34 +392,29 @@ cout << "Total cost = " << total_cost << currency << "\n";
 
 ## C++ divides the operators into the following groups:
 
-Arithmetic operators
+1. Arithmetic operators
 
-Assignment operators
+2. Assignment operators
 
-Comparison operators
+3. Comparison operators
 
-Logical operators
+4. Logical operators
 
-Bitwise operators
+5. Bitwise operators
 
 
 ## Arithmetic operators are used to perform common mathematical operations.
 
 **Example**
-
-+	Addition	Adds together two values	x + y
-+	
--	Subtraction	Subtracts one value from another	x - y
--	
-*	Multiplication	Multiplies two values	x * y
-*	
-/	Division	Divides one value by another	x / y
-
-%	Modulus	Returns the division remainder	x % y	
-
-++	Increment	Increases the value of a variable by 1	++x	
-
---	Decrement	Decreases the value of a variable by 1	--x
+|SYMBOL|NAME|USE|
+|---|---|---|
+|+	|Addition|	Adds together two values	x + y|
+|-	|Subtraction	|Subtracts one value from another	x - y|
+|*|	Multiplication|	Multiplies two values	x * y|
+|/	|Division	|Divides one value by another	x / y|
+|%	|Modulus|	Returns the division remainder	x % y	|
+|++|	Increment|	Increases the value of a variable by 1	++x	|
+|--	|Decrement	|Decreases the value of a variable by 1	--x|
 
 
 **EXAMPLE:**
@@ -451,28 +446,19 @@ cout << z << "\n"; // 5
 
 ## A list of all assignment operators:
 
-
-=	,x = 5,	x = 5	
-
-+=,	x += 3,	x = x + 3	
-
--=,	x -= 3,	x = x - 3	
-
-*=,	x *= 3,	x = x * 3	
-
-/=,	x /= 3,	x = x / 3	
-
-%=,	x %= 3,	x = x % 3	
-
-&=,	x &= 3,	x = x & 3	
-
-|=,	x |= 3,	x = x | 3	
-
-^=,	x ^= 3,	x = x ^ 3	
-
->>=,	x >>= 3,	x = x >> 3
->>
-<<=	,x <<= 3,	x = x << 3
+|SYMBOL|SYNTAX|MEANING|
+|---|---|---|
+|=	|,x = 5,|	x = 5	|
+|+=|	x += 3|	x = x + 3	|
+|-=	|x -= 3|	x = x - 3	|
+|*=|	x *= 3|	x = x * 3	|
+|=|	x /= 3|	x = x / 3	|
+|%=|	x %= 3|	x = x % 3	|
+|&=|	x &= 3|	x = x & 3	|
+|=|	x |= 3,|	x = x | 3	|
+|^=|	x ^= 3|	x = x ^ 3	|
+|>>=|	x >>= 3|	x = x >> 3|
+|<<=|	x <<= 3|	x = x << 3|
 
 
 ## Comparison operators are used to compare two values (or variables). This is important in programming, because it helps us to find answers and make decisions.
