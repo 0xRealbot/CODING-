@@ -64,11 +64,11 @@
 
 ## WHAT IS C++
 
-C++ is a popular programming language.
+1. C++ is a popular programming language.
 
-C++ is used to create computer programs, and is one of the most used languages in game development.
+2. C++ is used to create computer programs, and is one of the most used languages in game development.
 
-C++ was developed as an extension of C, and both languages have almost the same syntax.
+3. C++ was developed as an extension of C, and both languages have almost the same syntax.
 
 
 
