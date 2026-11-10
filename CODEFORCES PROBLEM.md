@@ -4,16 +4,9 @@ https://codeforces.com/group/MWSDmqGsZm/contest/219158
 
 
 # PROBLEM 1:SAY HELLO
-Given a name S. Print "Hello, (name)" without parentheses.
 
-**Input**
-
-Only one line containing a string S.
-
-**Output**
-
-Print "Hello, " without quotes, then print name.
-
+![PROBLEM 1](<img width="923" height="401" alt="Screenshot 2026-11-10 110427" src="https://github.com/user-attachments/assets/825eba76-8a04-4319-8b6e-af4e481c79a8" />
+)
 
 ## SOLUTION:
 
