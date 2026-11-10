@@ -105,19 +105,7 @@ int main() {
 
 
 ### PROBLEM 4:DIFFERENCE
-
-Given four numbers A, B, C and D. Print the result of the following equation :
-
- X = (A * B) - (C * D).
- 
-Input
-
-Only one line containing 4 separated numbers A, B, C and D ( - 105  ≤  A, B, C, D  ≤  105).
-
-Output
-
-Print "Difference  =  " without quotes followed by the equation result.
-
+![](https://github.com/medhanshmithukhatri-star/CODING-/blob/878c4a5b498076866e2c4742b26c52c183ac2e1d/PHOTO/Screenshot%202026-11-10%20111338.png)
 
 ## SOLUTION:
 
