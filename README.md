@@ -5,53 +5,53 @@
 
 - [x] C++ Syntax,
 
-C++ Output,
+- [x] C++ Output,
 
-C++ Comments,
+- [x] C++ Comments,
 
-C++ Variables
+- [x] C++ Variables
 
-C++ User Input,
+- [x] C++ User Input,
 
-C++ Data Types,
+- [x] C++ Data Types,
 
-C++ Operators,
+- [x] C++ Operators,
 
-C++ Strings,
+- [x] C++ Strings,
 
-C++ Math,
+- [x] C++ Math,
 
-C++ Booleans,
+- [x] C++ Booleans,
 
-C++ If...Else,
+- [x] C++ If...Else,
 
-C++ Switch,
+- [x] C++ Switch,
 
-C++ While Loop,
+- [x] C++ While Loop,
 
-C++ For Loop,
+- [x] C++ For Loop,
 
-C++ Break/Continue,
+- [x] C++ Break/Continue,
 
-C++ Arrays,
+- [x] C++ Arrays,
 
-C++ Structures,
+- [x] C++ Structures,
 
-C++ Enums,
+- [x] C++ Enums,
 
-C++ References,
+- [x] C++ References,
 
-C++ Pointers,
+- [x] C++ Pointers,
 
-C++ Memory Mgmt,
+- [x] C++ Memory Mgmt,
 
-function,
+- [x] function,
 
-errors,
+- [x] errors,
 
-classes,
+- [x] classes,
 
-ds.
+- [x] ds.
 
 
 #LANGUAGE COVERED
