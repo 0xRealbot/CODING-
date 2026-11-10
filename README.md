@@ -1,8 +1,9 @@
 # 🚀 My Beginner Programming & C++ Journey
 
-[![C++](https://shields.io)](https://isocpp.org)
-[![Compiler](https://shields.io)](https://gnu.org)
-[![Standard](https://shields.io)](https://cppreference.com)
+[![OOPs](https://shields.io)](https://isocpp.org)
+[![Data Structures](https://shields.io)](https://cppreference.com)
+[![STL](https://shields.io)](https://cppreference.comw/cpp/standard_library)
+[![Algorithms](https://shields.io)](https://cppreference.com)
 
 ## THINGS WHICH WILL BE COVERED
 
