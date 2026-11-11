@@ -10,9 +10,9 @@ coding challenges, and C++ solutions.
 
 | Sheet | Topics | Status |
 |---|---|---|
-| Sheet 01 | Basics | 🔄 In Progress |
-| Sheet 02 | Coming Soon | ⏳ Pending |
-| Sheet 03 | Coming Soon | ⏳ Pending |
+| Sheet 01 | Basics | DONE |
+| Sheet 02 | SIMPLE MATHS| DONE|
+| Sheet 03 | SUMMATION|  DONE |
 
 ## 🎯 Objectives
 
