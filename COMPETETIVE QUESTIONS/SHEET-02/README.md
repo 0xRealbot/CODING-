@@ -1,0 +1,18 @@
+
+# 📘 Sheet 02 — C++ BASIC MATHS
+> MY SECIND SHEET OF COMPETETIVE QUESTIONS
+
+## 📝 Questions
+
+| No. | Question | Difficulty | Status |
+|---|---|---|---|
+| 03 | Question C | AVG | DONE |
+| 04 | Question D| AVG| DONE |
+
+## 🎯 Learning Goals
+
+- HOW TO MAKE A SIMPLE CALCULATOR
+- PRACTICE CPP SYNTAX
+- WRITE CLEAN AND READABLE CODES
+- UNDERSTAND PROBLEM SOLVING APPROACHES
+- DIFFERENCE
