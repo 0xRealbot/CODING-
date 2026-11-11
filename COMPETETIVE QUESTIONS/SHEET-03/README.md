@@ -6,8 +6,8 @@
 
 | No. | Question | Difficulty | Status |
 |---|---|---|---|
-| 03 | Question C | AVG | DONE |
-| 04 | Question D| AVG| DONE |
+| 05 | Question E | AVG | DONE |
+| 06 | Question F |ABOVE AVG | DONE |
 
 ## 🎯 Learning Goals
 
