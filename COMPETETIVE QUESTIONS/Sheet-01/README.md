@@ -7,8 +7,8 @@
 
 | No. | Question | Difficulty | Status |
 |---|---|---|---|
-| 01 | Question A | Easy | 🔄 Pending |
-| 02 | Question B | Easy | 🔄 Pending |
+| 01 | Question A | Easy |DONE |
+| 02 | Question B | Easy |DONE |
 
 ## 🎯 Learning Goals
 
