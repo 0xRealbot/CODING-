@@ -1,0 +1,19 @@
+
+# 📘 Sheet 03 — C++ AREA+SUMMATION
+> MY THIRD SHEET OF COMPETETIVE QUESTIONS
+
+## 📝 Questions
+
+| No. | Question | Difficulty | Status |
+|---|---|---|---|
+| 03 | Question C | AVG | DONE |
+| 04 | Question D| AVG| DONE |
+
+## 🎯 Learning Goals
+
+- HOW TO FIND AREA OF CIRCLE
+- PRACTICE CPP SYNTAX
+- WRITE CLEAN AND READABLE CODES
+- UNDERSTAND PROBLEM SOLVING APPROACHES
+- SUMMATION
+- USE OF %(MODULAS)
