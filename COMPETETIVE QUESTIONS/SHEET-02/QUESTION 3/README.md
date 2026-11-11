@@ -1,3 +1,4 @@
+<img width="1080" height="1920" alt="1701535692370" src="https://github.com/user-attachments/assets/6f11462d-776d-4d63-af14-1366423f7ca7" />
 # QUESTION 3:SIMPLE CALCULATOR
 
 ## PROBLEM LINK
